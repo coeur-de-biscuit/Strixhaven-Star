@@ -1,11 +1,12 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Feather from '@expo/vector-icons/Feather';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { NavigationContainer } from '@react-navigation/native';
 
 import HomeScreen from './pages/HomeScreen';
 import StrixhavenStar from './pages/StrixhavenStar';
 import StudentRanking from './pages/StudentRanking';
-import { NavigationContainer } from '@react-navigation/native';
+import Profile from './pages/Profile';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -14,9 +15,18 @@ const Routes = () => {
     <NavigationContainer>
       <Navigator
         screenOptions={{
-          headerShown: false
+          headerShown: false,
         }}
+        backBehavior='history'
+
       >
+        <Screen
+          name="Profile"
+          component={Profile}
+          options={{
+            tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
+          }}
+        />
         <Screen
           name="Home"
           component={HomeScreen}
@@ -24,20 +34,21 @@ const Routes = () => {
             tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
           }}
         />
-        <Screen 
-          name="StrixhavenStar" 
-          component={StrixhavenStar} 
+        <Screen
+          name="StrixhavenStar"
+          component={StrixhavenStar}
           options={{
             tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
           }}
         />
-        <Screen 
-          name="StudentRanking" 
+        <Screen
+          name="StudentRanking"
           component={StudentRanking}
           options={{
             tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
           }}
         />
+
       </Navigator>
     </NavigationContainer>
   );

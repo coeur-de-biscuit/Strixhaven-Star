@@ -25,14 +25,16 @@ const StrixhavenStar: React.FC = () => {
               style={{ flex: 1, width: undefined, height: undefined, borderRadius: 7 }}
             />
           </View>
-          <View style={{ width: dimensions.width * 0.6, marginLeft: 20 }}>
+          <View style={{ width: dimensions.width * 0.6, marginLeft: 20, justifyContent: 'space-between', marginVertical: 10 }}>
             <Text numberOfLines={2} style={{ fontWeight: 'bold', fontSize: 18, flexShrink: 1 }}>Clube de Xadres tem o seu maior numero de incrito desde os ultimos quatro anos</Text>
-            <Text>
-              <Text>6 Mins Read</Text>
-              <Text> - Today</Text>
-            </Text>
-            <View style={{ borderWidth: 1, borderColor: '#4287f5',  alignSelf: 'flex-start' , alignItems: 'center', padding: 2, borderRadius: 15 }}>
-              <Text style={{ marginHorizontal: 15 }}>Fofoca</Text>
+            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+              <Text>
+                <Text>6 Mins Read</Text>
+                <Text> - Today</Text>
+              </Text>
+              <View style={{ borderWidth: 1, borderColor: '#4287f5',  alignSelf: 'flex-start' , alignItems: 'center', padding: 2, borderRadius: 15 }}>
+                <Text style={{ marginHorizontal: 15, color: '#4287f5' }}>Fofoca</Text>
+              </View>
             </View>
           </View>
         

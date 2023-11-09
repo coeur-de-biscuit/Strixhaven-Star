@@ -20,11 +20,18 @@ const Routes = () => {
         backBehavior='history'
 
       >
-        <Screen
+        {/* <Screen
           name="Profile"
           component={Profile}
           options={{
             tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
+          }}
+        /> */}
+        <Screen
+          name="StrixhavenStar"
+          component={StrixhavenStar}
+          options={{
+            tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
           }}
         />
         <Screen
@@ -32,13 +39,6 @@ const Routes = () => {
           component={HomeScreen}
           options={{
             tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
-          }}
-        />
-        <Screen
-          name="StrixhavenStar"
-          component={StrixhavenStar}
-          options={{
-            tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
           }}
         />
         <Screen

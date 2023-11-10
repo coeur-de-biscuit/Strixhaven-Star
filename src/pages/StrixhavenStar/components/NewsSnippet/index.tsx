@@ -16,7 +16,7 @@ interface NewsProps {
 
 const NewsSnippet = ({ badgeTitle, colorsTitle, image, readTime, title, writter, onPress }: NewsProps) => {
   return (
-    <TouchableOpacity style={{marginVertical: 10, width: dimensions.width}} onPress={onPress}>
+    <TouchableOpacity style={{ marginVertical: 10, width: dimensions.width * 0.9 }} onPress={onPress}>
       <View style={{ flexDirection: 'row' }}>
         <View style={{ width: 100, height: 100, borderRadius: 7 }}>
           <Image
@@ -25,16 +25,16 @@ const NewsSnippet = ({ badgeTitle, colorsTitle, image, readTime, title, writter,
           />
         </View>
         <View style={{ width: dimensions.width * 0.6, marginLeft: 20, justifyContent: 'space-between', marginVertical: 10 }}>
-          <Text numberOfLines={2} style={{  fontSize: 18, flexShrink: 1 }}>{title}</Text>
-          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-            <Text>
-              <Text>{readTime}</Text>
-              <Text> - {writter}</Text>
-            </Text>
-            <Badge 
+          <Text numberOfLines={2} style={{ fontSize: 18, flexShrink: 1 }}>{title}</Text>
+          <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '90%' }}>
+            <Badge
               title={badgeTitle}
               color={colorsTitle}
             />
+              <Text numberOfLines={1} style={{ flexShrink: 1, marginLeft: 10 }}>
+                <Text>{readTime}</Text>
+                <Text> - {writter}</Text>
+              </Text>
           </View>
         </View>
 

@@ -8,6 +8,7 @@ import StrixhavenStar from '../pages/StrixhavenStar';
 import StudentRanking from '../pages/StudentRanking';
 import Profile from '../pages/Profile';
 import { MyTabs } from './toptab.routes';
+import RankingDetail from '../pages/RankingDetail';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ const TabRoutes = () => {
 
       <Screen
         name="Home"
-        component={HomeScreen}
+        component={RankingDetail}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
         }}

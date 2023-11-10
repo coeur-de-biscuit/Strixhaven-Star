@@ -16,7 +16,7 @@ interface NewsProps {
 
 const NewsSnippet = ({ badgeTitle, colorsTitle, image, readTime, title, writter, onPress }: NewsProps) => {
   return (
-    <TouchableOpacity style={{marginVertical: 10}} onPress={onPress}>
+    <TouchableOpacity style={{marginVertical: 10, width: dimensions.width}} onPress={onPress}>
       <View style={{ flexDirection: 'row' }}>
         <View style={{ width: 100, height: 100, borderRadius: 7 }}>
           <Image

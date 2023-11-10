@@ -11,7 +11,7 @@ const StrixhavenStar: React.FC = ({}) => {
   var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
   return (
-    <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 40 }}>
+    <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 20 }}>
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 30 }}>Mais vistas</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         {StrixHavenNews.filter(cu => cu.tipo == 1).map(item => {

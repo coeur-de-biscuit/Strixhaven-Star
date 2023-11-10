@@ -8,6 +8,21 @@ const HomeScreen: React.FC = () => {
       <View style={{ margin: 20 }}>
         <PicturePost.Root>
           <PicturePost.PostHeader
+            user_thumb='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwP0_VKniUtpvU9GbDqLqtQRZA-enGXX5HsQfjdgH-v2bHYBiF-nf_xpgsWz0PZwYiLI&usqp=CAU'
+            user_name='Strixhaven Dragonchess Club'
+            location='Strixhaven'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.3GXsBTpSTw.OluBgugDD?pid=ImgGn'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_granmaster'
+            description='O time clube de Xadrez de Strixhaven vai realizar o seu primeiro encontro nessa terça-feira. Os diretores convidam a todos para participarem'
+          />
+        </PicturePost.Root>
+
+        <PicturePost.Root>
+          <PicturePost.PostHeader
             user_thumb='https://th.bing.com/th/id/OIG.aIs4dK.pNM1A3A5_PO23?pid=ImgGn'
             user_name='Clube de Artes Plasticas'
             location='Clube de Artes Plasticas, Strixhaven'
@@ -37,6 +52,7 @@ const HomeScreen: React.FC = () => {
             description='A banda The Cure Wounds foi sucesso no festival de artes promovido pela Organização Multiversal pela Cultura. Os jovens cativaram com seu som jovem e moderno e representaram muito bem Strixhaven'
           />
         </PicturePost.Root>
+
       </View>
     </ScrollView>
   );

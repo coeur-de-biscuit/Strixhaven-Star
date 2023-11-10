@@ -12,42 +12,43 @@ const { Navigator, Screen } = createBottomTabNavigator();
 
 const TabRoutes = () => {
   return (
-      <Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-        backBehavior='history'
-      >
-        {/* <Screen
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+      backBehavior='history'
+    >
+      {/* <Screen
           name="Profile"
           component={Profile}
           options={{
             tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
           }}
         /> */}
-        <Screen
-          name="StrixhavenStar"
-          component={StrixhavenStar}
-          options={{
-            tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
-          }}
-        />
-        <Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
-          }}
-        />
-        <Screen
-          name="StudentRanking"
-          component={StudentRanking}
-          options={{
-            tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
-          }}
-        />
+      <Screen
+        name="Home"
+        component={HomeScreen}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
+        }}
+      />
+      <Screen
+        name="StrixhavenStar"
+        component={StrixhavenStar}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
+        }}
+      />
 
-      </Navigator>
+      <Screen
+        name="StudentRanking"
+        component={StudentRanking}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
+        }}
+      />
+
+    </Navigator>
   );
 }
 

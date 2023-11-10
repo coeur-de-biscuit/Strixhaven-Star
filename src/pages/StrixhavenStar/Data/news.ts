@@ -124,7 +124,7 @@ export const StrixHavenNews = [
   {
     id: 6,
     image: 'https://th.bing.com/th/id/OIG.RAnigW4AuQps6aVBAGN0?pid=ImgGn',
-    title: ' Ruhini Abre Inscrições para o Novo Esquadrão de Líderes de Torcida de Strixhaven: Venha Ser Parte da Energia Mágica!',
+    title: 'Ruhini Abre Inscrições para o Novo Esquadrão de Líderes de Torcida de Strixhaven: Venha Ser Parte da Energia Mágica!',
     badgeTitle: 'Notícia',
     badgeColor: '#0388fc',
     readingTime: '1 minutos',
@@ -143,5 +143,4 @@ export const StrixHavenNews = [
     Se você tem paixão pela magia, energia contagiante e desejo de fazer parte de algo extraordinário, não perca a oportunidade de se juntar ao Grupo de Líderes de Torcida de Strixhaven. Prepare-se para espalhar a magia e ser uma parte fundamental da incrível experiência que é a vida em Strixhaven!`,
   
   },
-  
 ]

@@ -11,14 +11,14 @@ const TopThree = () => {
           position='2'
           name='Jake Gerstone'
           collegeName='Witherbloom'
-          size={110}
+          size={100}
         />
         <TopThreeCard
           image={require('../../../../assets/img/felisa.jpeg')}
           position='1'
           name='Felisa Fang'
           collegeName='Silverquill'
-          size={130}
+          size={120}
         />
 
         <TopThreeCard
@@ -26,7 +26,7 @@ const TopThree = () => {
           position='3'
           name='Luna Mox'
           collegeName='Quandrix'
-          size={100}
+          size={90}
         />
       </View>
     </View>

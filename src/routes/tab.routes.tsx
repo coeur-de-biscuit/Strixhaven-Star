@@ -27,13 +27,7 @@ const TabRoutes = () => {
           }}
         /> */}
 
-      <Screen
-        name="StudentRanking"
-        component={MyTabs}
-        options={{
-          tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
-        }}
-      />
+
       <Screen
         name="Home"
         component={HomeScreen}
@@ -41,6 +35,7 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
         }}
       />
+
       <Screen
         name="StrixhavenStar"
         component={StrixhavenStar}
@@ -48,8 +43,13 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
         }}
       />
-
-
+      <Screen
+        name="StudentRanking"
+        component={MyTabs}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
+        }}
+      />
     </Navigator>
   );
 }

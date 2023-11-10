@@ -1,47 +1,50 @@
 import React from 'react';
-import { Dimensions, Image, Text, View } from 'react-native';
+import { Button, ScrollView, Text, View } from 'react-native';
+import NewsSnippet from './components/NewsSnippet';
+import FeatureNews from './components/FeatureNews';
+import { StrixHavenNews } from './Data/news';
+import { useNavigation } from '@react-navigation/native';
+import { RootStackParamList } from '../../routes/stack.routes';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-const dimensions = Dimensions.get('window');
+const StrixhavenStar: React.FC = ({}) => {
+  var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
-const StrixhavenStar: React.FC = () => {
-  return(
-    <View>
-      <View>
-        <Text style={{ fontWeight: 'bold', fontSize: 26 }}>Noticias quentes</Text>
-        <View style={{ height: 300, width: dimensions.width }}>
-          <Image
-            source={{uri:  'https://th.bing.com/th/id/OIG.eVAyly1MNw_3thaMH_0p?pid=ImgGn'}}
-            style={{ flex: 1, height: undefined, width: undefined}}
-          />
-          <Text>Felisa é vista andando de mãos dadas com Amélia Moonflower, na saida do treino do time de Silverquill</Text>
-        </View>
-      </View>
-
-      <View>
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ width: 100, height: 100, borderRadius: 7 }}> 
-            <Image 
-              source={{uri: 'https://th.bing.com/th/id/OIG.DZHWvWBLP2kZabmXB5OT?pid=ImgGn'}}
-              style={{ flex: 1, width: undefined, height: undefined, borderRadius: 7 }}
+  return (
+    <ScrollView showsVerticalScrollIndicator={false} style={{ margin: 40 }}>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 30 }}>Mais vistas</Text>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        {StrixHavenNews.filter(cu => cu.tipo == 1).map(item => {
+          return(
+            <FeatureNews 
+              key={item.id}
+              image={item.image}
+              title={item.title}
+              onPress={() => navigation.navigate('NewsDetail', {id: item.id})}
             />
-          </View>
-          <View style={{ width: dimensions.width * 0.6, marginLeft: 20, justifyContent: 'space-between', marginVertical: 10 }}>
-            <Text numberOfLines={2} style={{ fontWeight: 'bold', fontSize: 18, flexShrink: 1 }}>Clube de Xadres tem o seu maior numero de incrito desde os ultimos quatro anos</Text>
-            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-              <Text>
-                <Text>6 Mins Read</Text>
-                <Text> - Today</Text>
-              </Text>
-              <View style={{ borderWidth: 1, borderColor: '#4287f5',  alignSelf: 'flex-start' , alignItems: 'center', padding: 2, borderRadius: 15 }}>
-                <Text style={{ marginHorizontal: 15, color: '#4287f5' }}>Fofoca</Text>
-              </View>
-            </View>
-          </View>
-        
-        </View>
-      </View>
-    </View>
-  )
+          )
+        })}
+      </ScrollView>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', marginVertical: 30 }}>Ultimas noticias</Text>
+      {
+        StrixHavenNews.filter(cu => cu.tipo == 2).map(item => {
+          return (
+            <NewsSnippet 
+              badgeTitle={item.badgeTitle}
+              colorsTitle={item.badgeColor}
+              image={item.image}
+              readTime={item.readingTime}
+              title={item.title}
+              writter={item.writter}
+              onPress={() => navigation.navigate('NewsDetail', {id: item.id})}
+            />
+          )
+        })
+      }
+      
+
+    </ScrollView>
+  );
 }
 
 export default StrixhavenStar;

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "StrixhavenStar",
-    "slug": "StrixhavenStar",
+    "slug": "strixhavenstar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pechenyebiscoito.strixhavenstar"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "71cc0467-8e4e-46ad-be80-f327ed1a38eb"
+      }
+    },
+    "owner": "pechenyebiscoito"
   }
 }

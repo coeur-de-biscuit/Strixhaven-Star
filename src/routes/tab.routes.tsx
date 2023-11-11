@@ -5,7 +5,6 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import HomeScreen from '../pages/HomeScreen';
 import StrixhavenStar from '../pages/StrixhavenStar';
-import StudentRanking from '../pages/StudentRanking';
 import Profile from '../pages/Profile';
 import { MyTabs } from './toptab.routes';
 import RankingDetail from '../pages/RankingDetail';
@@ -27,11 +26,9 @@ const TabRoutes = () => {
             tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
           }}
         /> */}
-
-
       <Screen
         name="Home"
-        component={RankingDetail}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='home' size={20} color={color} />
         }}

@@ -12,11 +12,11 @@ const dimensions = Dimensions.get('window');
 interface Props extends NativeStackScreenProps<RootStackParamList, 'NewsDetail'> {
 
 }
+
 const NewsDetail = ({ route }: Props) => {
 
   var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
-  var news = StrixHavenNews.filter((news) => news.id == route.params.id)
 
   return (
     <ScrollView style={{ margin: 20 }} showsVerticalScrollIndicator={false}>

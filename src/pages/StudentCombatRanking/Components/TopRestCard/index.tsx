@@ -12,6 +12,7 @@ interface TopRestCardProps {
 }
 
 const TopRestCard = ({ position, isDown, isUp, name, college, image}: TopRestCardProps) => {
+  
   return (
     <View style={{ flexDirection: 'row', alignItems: 'center', margin: 10 }}>
       <View style={{ alignItems: 'center', justifyContent: 'center', width: 20 }}>

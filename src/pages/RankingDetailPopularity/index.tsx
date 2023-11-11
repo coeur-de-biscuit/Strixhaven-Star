@@ -6,17 +6,17 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp, NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../routes/stack.routes';
-import { StarStudentsDetail } from './Data/StarStudentsDetail';
+import { StarPopularityStudentsDetail } from './Data/StarStudentsDetail';
 
-interface RankingDetailProps extends NativeStackScreenProps<RootStackParamList, 'RankingDetail'> {
+interface RankingDetailProps extends NativeStackScreenProps<RootStackParamList, 'RankingDetailPopularity'> {
 
 }
 
-const RankingDetail = ({ route }: RankingDetailProps) => {
+const RankingDetailPopularity = ({ route }: RankingDetailProps) => {
 
   var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
 
-  var news = StarStudentsDetail.filter((news) => news.id == route.params.id)
+  var news = StarPopularityStudentsDetail.filter((news) => news.id == route.params.id)
 
   const dimensions = Dimensions.get('window');
 
@@ -30,7 +30,7 @@ const RankingDetail = ({ route }: RankingDetailProps) => {
           color={'black'}
           style={{ margin: 30 }}
         />
-        {StarStudentsDetail.filter((news) => news.id == route.params.id).map(item => {
+        {StarPopularityStudentsDetail.filter((news) => news.id == route.params.id).map(item => {
           return (
             <>
               <View style={{ marginHorizontal: 30 }}>
@@ -71,4 +71,4 @@ const RankingDetail = ({ route }: RankingDetailProps) => {
   );
 }
 
-export default RankingDetail;
+export default RankingDetailPopularity;

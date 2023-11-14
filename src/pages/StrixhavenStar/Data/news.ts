@@ -1,24 +1,130 @@
 export const StrixHavenNews = [
   {
-    id: 1,
-    image: 'https://th.bing.com/th/id/OIG.C7u3Ua2j.Nj1bMP8sjhG?pid=ImgGn&w=1024&h=1024&rs=1',
-    title: 'Fang é vista de mãos dadas com Amélia Moonflower na saida do treino de MageTower.',
-    badgeTitle: 'Fofoca',
-    badgeColor: '#f55d42',
-    readingTime: '3 - minutos',
+    id: 11,
+    image: 'https://th.bing.com/th/id/OIG..HnsyAHPNYU8H5sp_UMZ?pid=ImgGn',
+    title: 'Professora Nassari: Explorando o Mundo Mágico das Artes em Strixhaven',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
     tipo: 1,
-    writter: 'Mina Lee',
-    content: `Uma reviravolta inesperada abalou os corredores da prestigiada escola de magia Strixhaven quando a estrela do time de Mage Tower de Silverquill, Felisa Fang, foi flagrada de mãos dadas com a caloura Amélia Moonflower. Os rumores sobre um possível romance entre as duas estão ganhando força, deixando a comunidade estudantil em frenesi.
+    writter: 'Professora Nassari',
+    content: `
+    Queridos estudantes mágicos de Strixhaven, a magia que envolve este lugar extraordinário não se limita apenas aos feitiços e encantamentos. É com grande entusiasmo que encorajo cada um de vocês a explorar e nutrir suas paixões artísticas.
 
-    Enquanto alguns não ligam para a possibilidade de um novo romance florescente em Strixhaven, outros estão ansiosos por detalhes sobre essa surpreendente conexão entre a talentosa jogadora e a recém-chegada ao mundo mágico.
+Strixhaven é mais do que uma escola de magia; é um centro de expressão criativa, um solo fértil para o florescimento de todas as formas de arte. Seja na música, pintura, poesia ou qualquer outra manifestação, há um espaço aqui para todos os tipos de artistas.
+
+Permitam-me compartilhar um exemplo inspirador: Katherine, uma talentosa estudante do primeiro ano, iniciou sua busca por membros para formar uma banda aqui em Strixhaven, a Mithralica. Isso demonstra que não importa se você é um veterano ou um calouro; há sempre espaço para trazer sua criatividade para a luz.
+
+A magia da música de Katherine se espalha como um feitiço encantador, conectando estudantes através das notas e acordes. Este é apenas um dos inúmeros exemplos do que é possível alcançar quando se busca apaixonadamente sua arte.
+
+Quero incentivar cada um de vocês a explorar e celebrar sua própria forma única de expressão. Seja participando de clubes existentes, como o "Chatíssimo Clube do Livro" ou os times de Mage Tower, ou iniciando seus próprios projetos, Strixhaven está aqui para nutrir e apoiar suas paixões.
+
+Lembrem-se, a magia está não apenas nos feitiços lançados, mas também nas pinceladas de uma tela, nas palavras de uma poesia ou nas notas de uma melodia. Que este seja o ano em que descobrimos e compartilhamos nossas paixões artísticas, tornando Strixhaven um local ainda mais vibrante e inspirador.
+
+Com toda a minha estima,
+
+Professora Nassari
+
+    `,
+
+  },
+  {
+    id: 10,
+    image: 'https://th.bing.com/th/id/OIG.2XLav2mx49GDVP2yrVmP?pid=ImgGn',
+    title: 'Conhecendo os Clubes: O inesperado sucesso do clube de Xadrez',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content: `
+    O primeiro encontro do Clube de Xadrez de Strixhaven tornou-se um evento histórico na instituição, com um número recorde de inscrições que superou as expectativas dos organizadores. Os responsáveis pelo clube expressaram entusiasmo diante da adesão massiva, destacando a diversidade de habilidades e o potencial para uma temporada memorável.
+
+    O Clube de Xadrez, conhecido por ser um ambiente intelectualmente estimulante, reuniu não apenas entusiastas, mas também alguns dos melhores jogadores de Strixhaven. Entre os participantes notáveis estão Tamako, a capitã do time de Mage Tower de Quandrix, e Stephen Harkin, um estrategista conhecido por suas habilidades excepcionais no tabuleiro.
+
+    Os responsáveis pelo Clube de Xadrez estão planejando uma série de eventos, torneios e atividades ao longo do ano, criando um espaço propício para o aprimoramento das habilidades e o fortalecimento do espírito de comunidade entre os amantes do xadrez em Strixhaven.
+
+    `,
+
+  },
+  {
+    id: 9,
+    image: 'https://th.bing.com/th/id/OIG.QluKTXiCmQQNWtfzP7Rw?pid=ImgGn',
+    title: 'Conhecendo os Clubes: O chatíssimo clube do livro',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content: `
+    Entrevistadora: Olá, Jane! Obrigada por se juntar a nós hoje. Pode nos contar um pouco sobre como surgiu a ideia de criar o "Chatíssimo Clube do Livro" em Strixhaven?
+
+    Jane Moriarty: Olá! Claro, foi uma ideia que surgiu da minha paixão pela leitura e pela vontade de criar um espaço onde pudesse reunir mais nerds iguais a mim para discutir livros. 
     
-    No entanto, quando a imprensa procurou por esclarecimentos, uma resposta sarcástica veio de Elliot Moonflower, também aluno de destaque em Strixhaven e irmão mais novo de Amélia. Questionado sobre a situação, Elliot não hesitou em dizer: "Vão procurar o que fazer."
+    Entrevistadora: Interessante! Como foi o processo de escolha do nome?
     
-    A resposta breve e carregada de sarcasmo de Elliot adicionou um toque de humor à especulação crescente. Parece que nem todos estão interessados em alimentar os rumores sobre a vida pessoal de seus colegas de escola.
+    Jane Moriarty: Bem, a ideia inicial era um nome bem cult, como: “A sociedade dos poetas mortos” ou “Codex Connoisseurs”. Mas a ideia de Chatíssimo Clube veio de uma aluna, acho que o nome dela é Mina Lee, ela disse que ninguém iria querer entrar em clube chato igual ao meu… Eu adorei a ideia e decidi nomear o clube assim.
     
-    Enquanto isso, a escola de magia mantém uma postura neutra, declarando que a vida pessoal dos estudantes não é da conta pública e que o foco deve permanecer nos estudos mágicos e no desenvolvimento acadêmico.
+    Entrevistadora: E como tem sido a experiência até agora?
     
-    O que está claro é que, além das poderosas habilidades mágicas, Strixhaven também é palco de intrigas e emoções humanas. À medida que os rumores continuam a se espalhar, os alunos aguardam ansiosos por desenvolvimentos futuros no que parece ser um novo capítulo de romance mágico em Strixhaven`,
+    Jane Moriarty: Maravilhosa! Já temos cinco membros, todos são muito engajados e trazem perspectivas diferentes para as nossas discussões. A atmosfera é acolhedora e, de fato, nada chata. Cada reunião é uma oportunidade para aprender mais sobre literatura e compartilhar ideias.
+    
+    Entrevistadora: E qual é o livro que estão lendo atualmente?
+    
+    Jane Moriarty: Atualmente estamos imersos em "Memórias de um Tabaxi de Milicias". É uma escolha um tanto peculiar, mas está proporcionando discussões muito interessantes sobre a narrativa, os personagens e o mundo apresentado pelo autor.
+    
+    Entrevistadora: Apesar de terem apenas cinco membros, o que mais você gostaria que as pessoas soubessem sobre o "Chatíssimo Clube do Livro"?
+    
+    Jane Moriarty: Gostaria que soubessem que leitura pode não ser tão empolgante quanto sangrar em uma arena ou correr por um estádio. Mas nosso pequeno grupo é unido e dedicado, e cada membro traz algo único para as discussões. A diversidade de opiniões é o que torna nossas reuniões tão enriquecedoras. E a professora Aisling trás sempre traz doces para os encontros.
+    
+    Entrevistadora: Parece uma experiência incrível! Obrigada, Jane, por compartilhar um pouco sobre o "Chatíssimo Clube do Livro" de Strixhaven conosco. Desejamos muito sucesso nas suas futuras leituras e discussões!
+    
+    Jane Moriarty: Obrigada a vocês! E quem quiser se juntar a nós, será muito bem-vindo ao "Chatíssimo Clube do Livro"!
+    
+    `,
+
+  },
+  {
+    id: 8,
+    image: 'https://th.bing.com/th/id/OIG.mIAsBCbM4kV7bs1W5D1K?pid=ImgGn&w=1024&h=1024&rs=1',
+    title: 'Duelo Épico Marcado Entre Miles e Luna Mox na Próxima Semana',
+    badgeTitle: 'Notícia ',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Rubina Larkingdale',
+    content: `
+      Em um dos eventos mais aguardados da temporada de duelos em Strixhaven, Miles, o promissor aluno do segundo ano, está marcado para enfrentar a formidável Luna Mox, atual detentora do terceiro lugar no ranking de combate. O duelo, agendado para a próxima semana, promete ser um espetáculo de magia e estratégia, conforme esses dois talentosos estudantes se enfrentam em uma batalha pela supremacia mágica.
+
+      Miles, que tem surpreendido a comunidade mágica com suas vitórias consecutivas, enfrentará seu maior desafio até agora ao se deparar com a destreza de Luna Mox. A combinação única de magia e habilidades com a espada de Miles será testada ao máximo contra a habilidosa manipulação mágica de Luna Mox.
+      
+      A rivalidade e a expectativa em torno deste duelo são palpáveis, com ambos os estudantes atraindo uma legião de admiradores. A escola está abuzz com palpites sobre quem sairá vitorioso deste confronto, e as apostas estão se acumulando à medida que a data se aproxima.
+      
+      Este duelo promete não apenas ser um espetáculo de habilidade mágica, mas também um evento que poderá alterar o panorama do ranking de combate em Strixhaven. Certamente, todos os olhos estarão voltados para a arena mágica na próxima semana para testemunhar a intensidade deste confronto entre Miles e Luna Mox.
+    
+    `,
+
+  },
+  {
+    id: 7,
+    image: 'https://th.bing.com/th/id/OIG.OJzFdGjUAFh7rs_iY.0f?pid=ImgGn&w=1024&h=1024&rs=1',
+    title: 'Violencia no campus: Amélia Moonflower ataca Mina Lee',
+    badgeTitle: 'Notícia ',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 2,
+    writter: 'Rubina Larkingdale',
+    content: `A tranquilidade da instituição mágica de Strixhaven foi abalada por um incidente chocante esta semana, quando Amélia Moonflower, se envolveu em uma briga física com Mina Lee, a jovem repórter do Strixhaven Star.
+
+    O confronto teve início quando Mina Lee, abordou a estudante em busca de esclarecimentos sobre uma matéria que Lee pretendia escrever. Testemunhas relatam que Amélia, não queria cooperar desde o começo e estava sendo muito mal educada proferindo ofensas contra Mina Lee a chamando de: “Fofoqueira de merda”, “Vadia” e “Para ela arrumar uma pi%* pra sentar ao invés de se meter na vida dos outros”.
+    
+    A situação tomou um rumo inesperado quando, segundo relatos, Amélia lançou um feitiço contra Mina Lee, deixando-a desmaiada. O ataque, considerado covarde por alguns, desencadeou uma rápida resposta da segurança de Strixhaven, que está investigando o incidente.
+    
+    A comunidade estudantil está polarizada em suas opiniões sobre o incidente, com alguns defendendo a posição de Amélia como uma reação à invasão de privacidade, enquanto outros condenam a violência física como inaceitável.
+    
+    Strixhaven ainda não emitiu uma declaração oficial sobre o ocorrido, mas a administração de Strixhaven está acompanhando de perto a investigação, e o desfecho desse episódio inesperado permanece incerto.
+    `,
+
   },
   {
     id: 2,
@@ -27,7 +133,7 @@ export const StrixHavenNews = [
     badgeTitle: 'Fofoca',
     badgeColor: '#f55d42',
     readingTime: '6 minutos',
-    tipo: 1,
+    tipo: 2,
     writter: 'Mina Lee',
     content: `A atmosfera em Strixhaven está vibrando com murmúrios e especulações enquanto uma nova aluna, a encantadora Nerina, entra na escola de magia com uma semana de atraso, acrescentando um toque de magia e mistério ao já impressionante campus. O que a torna ainda mais fascinante é o fato de que sua chegada foi tão sutil quanto uma brisa noturna, sem aviso prévio.
 
@@ -38,7 +144,7 @@ export const StrixHavenNews = [
     O que mais está intrigando a comunidade estudantil é a suposta beleza sobrenatural de Nerina. Alguns colegas comentaram sobre a aura mágica que a cerca, sugerindo que sua aparência vai além dos padrões humanos, adicionando ainda mais uma camada de encanto à sua presença.
     
     Enquanto a administração de Strixhaven mantém silêncio sobre os detalhes da admissão especial de Nerina, a escola está vendo um aumento nas especulações e na curiosidade dos estudantes. Strixhaven, já repleta de segredos mágicos, parece ter ganhado uma nova estrela envolta em mistério, e a comunidade aguarda ansiosamente para ver como essa história mágica se desenrolará.`,
-  
+
   },
   {
     id: 3,
@@ -47,7 +153,7 @@ export const StrixHavenNews = [
     badgeTitle: 'Notícia ',
     badgeColor: '#0388fc',
     readingTime: '6 minutos',
-    tipo: 1,
+    tipo: 2,
     writter: 'Mina Lee',
     content: `Em uma série de eventos surpreendentes, alunos da prestigiada escola de magia Strixhaven têm desafiado as regras da instituição e escapado para explorar os perigosos corredores e becos da cidade planar de Sigil.
 
@@ -63,7 +169,28 @@ export const StrixHavenNews = [
     
     Espera-se que a presença da Capitã Dapplewing traga uma sensação de segurança à comunidade estudantil, enquanto a administração de Strixhaven continua a investigar e abordar as raízes dessa recente onda de aventuras além dos limites da escola.
     `,
-  
+
+  },
+  {
+    id: 1,
+    image: 'https://th.bing.com/th/id/OIG.Mr6PUG3lHyJGSwrOviUt?pid=ImgGn',
+    title: 'Fang é vista de mãos dadas com Amélia Moonflower na saida do treino de MageTower.',
+    badgeTitle: 'Fofoca',
+    badgeColor: '#f55d42',
+    readingTime: '3 - minutos',
+    tipo: 2,
+    writter: 'Mina Lee',
+    content: `Uma reviravolta inesperada abalou os corredores da prestigiada escola de magia Strixhaven quando a estrela do time de Mage Tower de Silverquill, Felisa Fang, foi flagrada de mãos dadas com a caloura Amélia Moonflower. Os rumores sobre um possível romance entre as duas estão ganhando força, deixando a comunidade estudantil em frenesi.
+
+    Enquanto alguns não ligam para a possibilidade de um novo romance florescente em Strixhaven, outros estão ansiosos por detalhes sobre essa surpreendente conexão entre a talentosa jogadora e a recém-chegada ao mundo mágico.
+    
+    No entanto, quando a imprensa procurou por esclarecimentos, uma resposta sarcástica veio de Elliot Moonflower, também aluno de destaque em Strixhaven e irmão mais novo de Amélia. Questionado sobre a situação, Elliot não hesitou em dizer: "Vão procurar o que fazer."
+    
+    A resposta breve e carregada de sarcasmo de Elliot adicionou um toque de humor à especulação crescente. Parece que nem todos estão interessados em alimentar os rumores sobre a vida pessoal de seus colegas de escola.
+    
+    Enquanto isso, a escola de magia mantém uma postura neutra, declarando que a vida pessoal dos estudantes não é da conta pública e que o foco deve permanecer nos estudos mágicos e no desenvolvimento acadêmico.
+    
+    O que está claro é que, além das poderosas habilidades mágicas, Strixhaven também é palco de intrigas e emoções humanas. À medida que os rumores continuam a se espalhar, os alunos aguardam ansiosos por desenvolvimentos futuros no que parece ser um novo capítulo de romance mágico em Strixhaven`,
   },
   {
     id: 4,
@@ -85,7 +212,7 @@ export const StrixHavenNews = [
     Wanda Nontao, apesar da derrota na competição em duplas, foi aplaudida pela sua impressionante performance ao longo do torneio. Aires Oriande e Serana Cortinarius foram calorosamente parabenizados por sua vitória e por demonstrar uma combinação notável de habilidade e trabalho em equipe.
     
     O Clube de Duelos de Strixhaven promete ser um palco emocionante para futuros eventos mágicos, à medida que os estudantes continuam a aprimorar suas habilidades e a competir em duelos eletrizantes. A comunidade escolar aguarda ansiosamente as próximas competições, antecipando mais momentos emocionantes e surpreendentes no mundo da magia.`,
-  
+
   },
   {
     id: 5,
@@ -119,7 +246,7 @@ export const StrixHavenNews = [
     Além dos benefícios acadêmicos e mágicos, participar de um clube em Strixhaven oferece oportunidades significativas para o desenvolvimento pessoal. Os alunos têm a chance de assumir papéis de liderança, organizar eventos e até mesmo contribuir para a criação de novos clubes, desenvolvendo habilidades de liderança e trabalho em equipe.
     
     Ao unirem-se a um clube em Strixhaven, os alunos não apenas aprimoram suas habilidades mágicas, mas também enriquecem sua experiência acadêmica, criando uma comunidade mágica mais forte e vibrante. Em um mundo onde a magia é mais do que feitiços, mas uma jornada compartilhada, a participação em clubes é uma porta aberta para um universo de descobertas mágicas.`,
-  
+
   },
   {
     id: 6,
@@ -141,6 +268,6 @@ export const StrixHavenNews = [
     A diretora de Prismari, Nassari, expressou seu apoio entusiasmado à iniciativa de Ruhini, destacando a importância de integrar diversas formas de magia na vida acadêmica. "Os líderes de torcida desempenham um papel vital na construção de uma comunidade unida e vibrante. Encorajo todos os estudantes a considerarem esta oportunidade única de canalizar sua magia de uma maneira diferente e emocionante," afirmou Nassari.
     
     Se você tem paixão pela magia, energia contagiante e desejo de fazer parte de algo extraordinário, não perca a oportunidade de se juntar ao Grupo de Líderes de Torcida de Strixhaven. Prepare-se para espalhar a magia e ser uma parte fundamental da incrível experiência que é a vida em Strixhaven!`,
-  
+
   },
 ]

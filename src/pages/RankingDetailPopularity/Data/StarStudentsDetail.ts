@@ -130,29 +130,6 @@ A história de Elliot Moonflower revela um equilíbrio delicado entre sucesso ac
   },
   {
     id: 7,
-    image: require('../../../assets/img/robert.jpeg'),
-    nome: 'Robert Jansen',
-    colegio: 'Prismari',
-    badges: [
-      {
-        title: 'band',
-        color: '#429ef5'
-      },
-      {
-        title: 'dancer',
-        color: '#e303fc'
-      },
-    ],
-    content: `
-    Robert Jansen é um talentoso músico solo em Strixhaven, conhecido por suas habilidades excepcionais tanto como cantor quanto como dançarino. Suas performances cativantes e emotivas ganharam destaque na comunidade estudantil, estabelecendo-o como uma figura marcante na cena musical da instituição.
-    
-    A música de Robert é uma expressão eloquente de temas que abrangem relacionamentos, a jornada da vida e até mesmo os desafios associados à fama. Suas letras profundas e melodias envolventes ressoam entre os colegas estudantes, criando uma conexão emocional que vai além das habilidades musicais. Ele se tornou uma espécie de narrador musical, compartilhando histórias e reflexões que ressoam com a experiência coletiva.
-    
-    Além de suas proezas musicais, Robert é reconhecido por sua habilidade surpreendente como dançarino, adicionando uma dimensão visual e dinâmica às suas apresentações. Sua presença carismática no palco e seu talento versátil consolidam sua posição como uma das personalidades mais admiradas e talentosas de Strixhaven, contribuindo para a vibrante cena artística da instituição.`
-  },
-
-  {
-    id: 8,
     image: require('../../../assets/img/aires.png'),
     nome: 'Airis Oriande',
     colegio: '1° Ano',
@@ -169,14 +146,14 @@ A história de Elliot Moonflower revela um equilíbrio delicado entre sucesso ac
     content: `
     Aires Oriande, uma fada do primeiro ano em Strixhaven, rapidamente se tornou uma figura notável no campus. Sua presença encantadora e carisma atraíram a atenção tanto dos meninos quanto das meninas, tornando-a uma sensação entre os estudantes.
 
-O destaque especial na vida de Aires é a notável exceção de Elliot Moonflower, que, conhecido por sua aversão a interações pessoais, parece suportar a presença de Aires. Essa conexão peculiar levanta perguntas intrigantes sobre a dinâmica única entre esses dois estudantes.
+    O destaque especial na vida de Aires é a notável exceção de Elliot Moonflower, que, conhecido por sua aversão a interações pessoais, parece suportar a presença de Aires. Essa conexão peculiar levanta perguntas intrigantes sobre a dinâmica única entre esses dois estudantes.
 
-Além disso, Aires Oriande está sendo cogitada por Felisa Fang para integrar seu time de Mage Tower. Essa proposta destaca não apenas sua popularidade social, mas também suas habilidades mágicas, indicando que sua presença é valorizada não apenas pelos seus colegas, mas também pelos líderes estudantis notáveis em Strixhaven.
+    Além disso, Aires Oriande está sendo cogitada por Felisa Fang para integrar seu time de Mage Tower. Essa proposta destaca não apenas sua popularidade social, mas também suas habilidades mágicas, indicando que sua presença é valorizada não apenas pelos seus colegas, mas também pelos líderes estudantis notáveis em Strixhaven.
 
-Assim, Aires Oriande emerge como uma figura multifacetada, conquistando tanto a atenção social quanto a reconhecimento acadêmico em seu primeiro ano em Strixhaven.`
+    Assim, Aires Oriande emerge como uma figura multifacetada, conquistando tanto a atenção social quanto a reconhecimento acadêmico em seu primeiro ano em Strixhaven.`
   },
   {
-    id: 9,
+    id: 8,
     image: require('../../../assets/img/serana.png'),
     nome: 'Serana Corinthians',
     colegio: '1° Ano',
@@ -189,18 +166,37 @@ Assim, Aires Oriande emerge como uma figura multifacetada, conquistando tanto a 
     content: `Senara, uma recém-chegada a Strixhaven, rapidamente se destacou entre os estudantes e chamou a atenção da professora Onyx, uma figura notável na instituição. Seu ingresso recente na escola não a impediu de participar ativamente de duelos mágicos, onde demonstrou habilidades notáveis e uma compreensão impressionante das artes místicas.`
   },
   {
-    id: 10,
-    image: require('../../../assets/img/nerina.jpeg'),
-    nome: 'Nerina',
+    id: 9,
+    image: require('../../../assets/img/serana.png'),
+    nome: 'Amélia Moonflower',
     colegio: '1° Ano',
     badges: [
       {
-        title: 'horticulture',
-        color: '#03fc3d'
+        title: 'duelist',
+        color: '#429ef5'
       },
     ],
-    content: `Nerina, uma aluna recém-chegada a Strixhaven, causou um impacto notável mesmo com sua entrada tardia, chegando uma semana após o início do período letivo. Sua reputação rapidamente se espalhou pelos corredores da instituição devido à sua beleza que transcende os padrões comuns.
+    content: `Senara, uma recém-chegada a Strixhaven, rapidamente se destacou entre os estudantes e chamou a atenção da professora Onyx, uma figura notável na instituição. Seu ingresso recente na escola não a impediu de participar ativamente de duelos mágicos, onde demonstrou habilidades notáveis e uma compreensão impressionante das artes místicas.`
+  },
+  {
+    id: 10,
+    image: require('../../../assets/img/nerina.jpeg'),
+    nome: 'Katherine',
+    colegio: '1° Ano',
+    badges: [
+      {
+        title: 'band',
+        color: '#429ef5'
+      },
+      {
+        title: 'artist',
+        color: '#429ef5'
+      },
+    ],
+    content: `Amy Moonflower, a irmã de Elliot Moonflower, tornou-se o foco de atenção em Strixhaven após uma discussão intensa com Mina Lee, a principal editora do Strixhaven Star. A fofoca rapidamente se espalhou sobre o confronto entre as duas estudantes, gerando especulações e interesse considerável na comunidade estudantil.
 
-    A beleza sobrenatural de Nerina tornou-se um ponto de discussão entre os estudantes, gerando curiosidade e admiração. Sua presença é acompanhada por uma aura intrigante que a diferencia, contribuindo para sua notoriedade no campus.`
+    A discussão teve origem na insistência de Mina Lee em questionar Amy sobre seu suposto relacionamento romântico com Felisa Fang. Amy, incapaz de tolerar a importunação persistente, tomou medidas drásticas e atacou Mina com um feitiço. 
+
+    Amy Moonflower, se provou muito parecida com seu irmão e que não hesita em se posicionar quando se sente invadida. A controvérsia em torno do incidente com Mina Lee agora define Amy como uma presença marcante, cujas ações têm um impacto significativo na dinâmica social de Strixhaven.`
   },
 ]

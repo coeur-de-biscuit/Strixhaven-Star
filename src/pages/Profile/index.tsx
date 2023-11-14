@@ -3,6 +3,7 @@ import { Dimensions, View } from 'react-native';
 import ProfileInfo from './components/ProfileInfo';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../routes/stack.routes';
+import { PicturePost } from '../HomeScreen/components/PicturePost';
 
 const dimensions = Dimensions.get('window');
 
@@ -11,11 +12,25 @@ const dimensions = Dimensions.get('window');
 // }
 const Profile = () => {
   return (
-    <View style={{ backgroundColor: '#0B0222', justifyContent: 'space-between', height: dimensions.height }}>
+    <View style={{ height: dimensions.height }}>
       <View style={{ margin: 30 }}>
-        <ProfileInfo />
-      </View>
-      <View style={{ width: '100%', height: dimensions.height * 0.6, backgroundColor: 'white', borderRadius: 30 }}>
+        <View>
+          <ProfileInfo />
+        </View>
+      <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwP0_VKniUtpvU9GbDqLqtQRZA-enGXX5HsQfjdgH-v2bHYBiF-nf_xpgsWz0PZwYiLI&usqp=CAU'
+            user_name='Strixhaven Dragonchess Club'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_granmaster'
+            description='O time clube de Xadrez de Strixhaven vai realizar o seu primeiro encontro nessa terça-feira. Os diretores convidam a todos para participarem'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.3GXsBTpSTw.OluBgugDD?pid=ImgGn'
+          />
+        </PicturePost.Root>
       </View>
     </View>
   );

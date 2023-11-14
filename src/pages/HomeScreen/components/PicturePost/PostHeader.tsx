@@ -27,7 +27,6 @@ const PostHeader = ({ user_thumb, user_name, location}: HeaderProps) => {
             <Text style={_styles.location}>{location}</Text>
           </View>
         </View>
-        <Ionicons name="ellipsis-vertical-outline" size={32} />
       </View>
     </View>
   );

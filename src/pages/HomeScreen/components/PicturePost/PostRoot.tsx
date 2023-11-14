@@ -7,8 +7,10 @@ interface PostRootProps {
 
 export function PostRoot({ children }: PostRootProps) {
   return (
-    <View>
-      {children}
+    <View style={{ marginBottom: 20}}>
+      <View style={{ margin: 10}}>
+        {children}
+      </View>
     </View>
   )
 }

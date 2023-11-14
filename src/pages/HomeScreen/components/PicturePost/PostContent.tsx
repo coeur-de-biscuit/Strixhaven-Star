@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 interface ContentProps {
@@ -16,12 +16,18 @@ const PostContent = ({ post_image }: ContentProps) => {
         />
       </View>
       <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 10}}>
-        <View style={{flexDirection: 'row', alignItems: 'center', width: 120, justifyContent: 'space-between'}}>
-          <Ionicons name="heart-outline" size={36} />
-          <Ionicons name="chatbubble-outline" size={32} />
-          <Ionicons name="paper-plane-outline" size={32} />
+        <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', width: '100%'}}>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Ionicons name="heart-outline" size={36} />
+            <Text style={{marginLeft: 5}}>Like</Text>
+          </View>
+          <View style={{flexDirection: 'row', alignItems: 'center'}}>
+            <Ionicons name="chatbubble-outline" size={32} />
+            <Text style={{marginLeft: 5}}>Comment</Text>
+          </View>
+          
         </View>
-        <Ionicons name="bookmark-outline" size={32} />
+        
       </View>
     </View>
 

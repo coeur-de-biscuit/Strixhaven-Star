@@ -9,8 +9,7 @@ interface DescriptionProps {
 
 const PostDescription = ({ user_name, description, mentions }: DescriptionProps) => {
   return (
-    <View style={{ marginBottom: 20 }}>
-      <Text style={{ fontWeight: 'bold', fontSize: 14 }}>{user_name}</Text>
+    <View style={{ marginTop: 20, width: '90%', marginLeft: 5}}>
       <Text>
         <Text>{description}</Text>
         <Text style={{ color: '#426eff' }}> {mentions}</Text>

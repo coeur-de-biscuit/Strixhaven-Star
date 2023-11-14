@@ -30,7 +30,7 @@ Professora Nassari
   },
   {
     id: 10,
-    image: 'https://th.bing.com/th/id/OIG.2XLav2mx49GDVP2yrVmP?pid=ImgGn',
+    image: 'https://th.bing.com/th/id/OIG.Stweyk72V1j7wZOlSasd?pid=ImgGn',
     title: 'Conhecendo os Clubes: O inesperado sucesso do clube de Xadrez',
     badgeTitle: 'Notícia',
     badgeColor: '#0388fc',

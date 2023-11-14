@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, ScrollView, View } from 'react-native';
 import { PicturePost } from './components/PicturePost';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../routes/stack.routes';
 import { FIREBASE_AUTH } from '../../../FirebaseConfig';
+import { AuthContext } from '../../contexts/Auth/AuthContext';
 
 interface Props extends NativeStackScreenProps<RootStackParamList, 'Home'> {
 
 }
 
-const HomeScreen: React.FC = () => {
+const HomeScreen = ({ route }: Props) => {
+  const user = useContext(AuthContext);
+  console.log(user?.uid)
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       {/* <Button 
@@ -17,7 +20,21 @@ const HomeScreen: React.FC = () => {
         title='adasd'
       /> */}
       <View style={{ margin: 20 }}>
-      <PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description='Comia logo os dois'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.3uCmzYiYxhVm3_V28M4F?pid=ImgGn&w=1024&h=1024&rs=1'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
           <PicturePost.PostHeader
             user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
             user_name='Strixhaven Ball'

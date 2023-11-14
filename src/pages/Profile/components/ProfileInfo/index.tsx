@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Dimensions, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { FIREBASE_AUTH } from '../../../../../FirebaseConfig';
 
 const dimensions = Dimensions.get('window');
 
@@ -27,9 +28,9 @@ const ProfileInfo = () => {
               <Text style={{ marginHorizontal: 20, color: 'white', fontWeight: 'bold' }}>Seguir </Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={(() => FIREBASE_AUTH.signOut())}>
             <View style={{ backgroundColor: '#1bb5db', padding: 10, borderRadius: 30 }}>
-              <Text style={{ marginHorizontal: 20, color: 'white', fontWeight: 'bold' }}>Message</Text>
+              <Text style={{ marginHorizontal: 20, color: 'white', fontWeight: 'bold' }}>Sair</Text>
             </View>
           </TouchableOpacity>
         </View>

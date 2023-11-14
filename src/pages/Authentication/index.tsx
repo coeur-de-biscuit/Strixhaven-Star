@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Image, Text, View, TouchableOpacity, ActivityIndicator } from 'react-native';
 import InputWithIcon from '../../components/InputWithIcon';
 import { FIREBASE_AUTH } from '../../../FirebaseConfig';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { AuthContext } from '../../contexts/Auth/AuthContext';
 
 
 const Authentication: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const auth = FIREBASE_AUTH;
 
-  console.log(email)
+  const auth = FIREBASE_AUTH;
 
   const signIn = async () => {
     setLoading(true);
@@ -81,20 +81,7 @@ const Authentication: React.FC = () => {
               <Text style={{ color: 'white' }}>Entrar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity
-              onPress={signUp}
-              style={{
-                backgroundColor: '#3f3a5e',
-                padding: 10,
-                borderRadius: 8,
-                marginHorizontal: 10,
-                flexDirection: 'row',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: 220
-              }}>
-              <Text style={{ color: 'white' }}>Cadastrar</Text>
-            </TouchableOpacity>
+           
           </>
       }
 

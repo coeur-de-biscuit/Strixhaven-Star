@@ -28,7 +28,220 @@ const HomeScreen = ({ route }: Props) => {
           />
           <PicturePost.PostDescription
             user_name='strix_bola'
-            description='Comia logo os dois'
+            description={`C'MON KIDS. `}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.W2yTgqvao7ifWEJwrL0q?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Apresentação da banda nova, muito foda. Muito gostosas tbm`}
+          />
+          <PicturePost.PostContent
+            post_image='https://raw.githubusercontent.com/Salt-N-Pepa/Pyceptron/main/7963a5b3-7de7-499d-8c5e-86eead2da300.jpg'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Fiquei de bauduco`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.kHLpX43FAATL5YAVJc.O?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Best teacher sim ou com certeza?`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.FA11fEI92EqMTOAGwhj0?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Mas não tamo ficando não, confia...`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.40NoyIifZ0QHpW0lAP6P?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Até a Jane tava lá`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.FQ9qLcVzy3YT6neQvHzS?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`É seus lixo, se ele consegue vcs também`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.kQANmLNzStpIvZsWD1s0?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Muito foda Helsinha, vlw pelo gelinho`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.NXCFv7F.EKBQUos0tyRl?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Rapaziada rolê hj a noite no pátio do biblioplex, vamo beber, patinar no gelo e ouvir a Sousie cantando\n\nQualquer chato está banido, inclusive temos permissão da Tia Onyx. Pau no seu cu Hermione.`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.cVxPb0tOKtloPV7ebC3I?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Casalzões da porra: Era dentro\nTamako e Killian`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.8kjSAg95WFCsWy0cTksV?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/564x/f9/c4/3d/f9c43d44d6c29f960ef13a8a01c021b3.jpg'
+            user_name='Strixhaven Show Band Association'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strixhaven_music'
+            description='Bem vinda a banda Serana'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.8TnA6ZuU10hXPLTQ60pt?pid=ImgGn'
+          />
+
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/564x/f9/c4/3d/f9c43d44d6c29f960ef13a8a01c021b3.jpg'
+            user_name='Strixhaven Show Band Association'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strixhaven_music'
+            description='Bem vinda a banda Katherine'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.gjOtnl_Ir6nPMuA.vukr?w=1024&h=1024&rs=1&pid=ImgDetMain'
+          />
+
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/564x/f9/c4/3d/f9c43d44d6c29f960ef13a8a01c021b3.jpg'
+            user_name='Strixhaven Show Band Association'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strixhaven_music'
+            description='Bem vinda a banda Rubina Larkingdale'
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.Jqw0VEEaLMyi9qeQQru6?pid=ImgGn'
+          />
+
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Casalzões da porra: Quem come quem?\nSerana e Steve`}
+          />
+          <PicturePost.PostContent
+            post_image='https://lh3.googleusercontent.com/pw/ADCreHdAUkXkw5rYeE3-EiaBq7N6nT-NbbJWc4ilgpFeGnhkAT1TY3Cor9xJ90cJ4-xqo4-bd1dul2ImQlGtNelYev1IBDiXvWVjAriUS6QnDDCSF1HoUuLkrolyLIhLhf65Fhjr4_LfHy9PDuyigt0HImer=w620-h620-s-no-gm?authuser=0'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Casalzões da porra: Dava pros dois\nCharlie e Harry`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.9GN42WGz0tk2T4CtkmuW?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Casalzões da porra: Comia logo os dois\nAya e Victor`}
           />
           <PicturePost.PostContent
             post_image='https://th.bing.com/th/id/OIG.3uCmzYiYxhVm3_V28M4F?pid=ImgGn&w=1024&h=1024&rs=1'

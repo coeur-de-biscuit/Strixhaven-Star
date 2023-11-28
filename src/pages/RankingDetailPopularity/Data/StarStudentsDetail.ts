@@ -109,24 +109,22 @@ A história de Elliot Moonflower revela um equilíbrio delicado entre sucesso ac
 
   {
     id: 6,
-    image: require('../../../assets/img/Tamako.jpeg'),
-    nome: 'Tamako',
-    colegio: 'Silverquill',
+    image: require('../../../assets/img/amelia.jpg'),
+    nome: 'Amélia Moonflower',
+    colegio: '1° Ano',
     badges: [
       {
-        title: 'chess',
+        title: 'duelist',
         color: '#03f4fc'
       },
       {
-        title: 'mage tower',
-        color: '#42f557'
+        title: 'puta',
+        color: '#f58442'
       },
     ],
-    content: `Tamako é uma figura proeminente em Strixhaven, atuando como capitã do renomado time de Mage Tower de Quandrix, considerado o melhor da instituição. Sua liderança e habilidades estratégicas são evidentes no campo de batalha mágico, consolidando a reputação de seu time como imbatível.
-
-    Além de suas proezas atléticas, Tamako é reconhecida como uma gênia matemática, destacando-se no campo acadêmico. Seu intelecto afiado contribui significativamente para a abordagem tática do time, tornando-a uma líder formidável tanto nos estudos quanto no Mage Tower.
-    
-    Tamako não apenas enfrenta desafios no campo mágico, mas também estabelece uma rivalidade notável com Felisa Fang. A competição entre essas duas personalidades destemidas adiciona uma camada emocionante à vida em Strixhaven, cativando a atenção de colegas estudantes e fortalecendo ainda mais a reputação de Tamako como uma líder excepcional.`
+    content: `Amy Moonflower, desde sua chegada a Strixhaven, se destacou entre os estudantes, chamando atenção com sua presença marcante. Embora negue veementemente, há especulações sobre um relacionamento entre ela e Felisa Fang, adicionando uma 
+    camada de mistério à sua vida pessoal. A popularidade de Amy atingiu um novo patamar quando se envolveu em um incidente controverso ao agredir a jovem repórter Mina Lee durante uma entrevista. Esse acontecimento gerou debates e fofocas dentro da 
+    comunidade estudantil, consolidando Amy como uma figura intrigante e polêmica em Strixhaven.`
   },
   {
     id: 7,
@@ -154,33 +152,28 @@ A história de Elliot Moonflower revela um equilíbrio delicado entre sucesso ac
   },
   {
     id: 8,
-    image: require('../../../assets/img/serana.png'),
-    nome: 'Serana Corinthians',
-    colegio: '1° Ano',
+    image: require('../../../assets/img/Tamako.jpeg'),
+    nome: 'Tamako',
+    colegio: 'Silverquill',
     badges: [
       {
-        title: 'duelist',
-        color: '#429ef5'
+        title: 'chess',
+        color: '#03f4fc'
+      },
+      {
+        title: 'mage tower',
+        color: '#42f557'
       },
     ],
-    content: `Senara, uma recém-chegada a Strixhaven, rapidamente se destacou entre os estudantes e chamou a atenção da professora Onyx, uma figura notável na instituição. Seu ingresso recente na escola não a impediu de participar ativamente de duelos mágicos, onde demonstrou habilidades notáveis e uma compreensão impressionante das artes místicas.`
+    content: `Tamako é uma figura proeminente em Strixhaven, atuando como capitã do renomado time de Mage Tower de Quandrix, considerado o melhor da instituição. Sua liderança e habilidades estratégicas são evidentes no campo de batalha mágico, consolidando a reputação de seu time como imbatível.
+
+    Além de suas proezas atléticas, Tamako é reconhecida como uma gênia matemática, destacando-se no campo acadêmico. Seu intelecto afiado contribui significativamente para a abordagem tática do time, tornando-a uma líder formidável tanto nos estudos quanto no Mage Tower.
+    
+    Tamako não apenas enfrenta desafios no campo mágico, mas também estabelece uma rivalidade notável com Felisa Fang. A competição entre essas duas personalidades destemidas adiciona uma camada emocionante à vida em Strixhaven, cativando a atenção de colegas estudantes e fortalecendo ainda mais a reputação de Tamako como uma líder excepcional.`
   },
   {
     id: 9,
-    image: require('../../../assets/img/serana.png'),
-    nome: 'Amélia Moonflower',
-    colegio: '1° Ano',
-    badges: [
-      {
-        title: 'duelist',
-        color: '#429ef5'
-      },
-    ],
-    content: `Senara, uma recém-chegada a Strixhaven, rapidamente se destacou entre os estudantes e chamou a atenção da professora Onyx, uma figura notável na instituição. Seu ingresso recente na escola não a impediu de participar ativamente de duelos mágicos, onde demonstrou habilidades notáveis e uma compreensão impressionante das artes místicas.`
-  },
-  {
-    id: 10,
-    image: require('../../../assets/img/nerina.jpeg'),
+    image: require('../../../assets/img/katherine.jpeg'),
     nome: 'Katherine',
     colegio: '1° Ano',
     badges: [
@@ -190,13 +183,32 @@ A história de Elliot Moonflower revela um equilíbrio delicado entre sucesso ac
       },
       {
         title: 'artist',
-        color: '#429ef5'
+        color: '#f58442'
       },
     ],
-    content: `Amy Moonflower, a irmã de Elliot Moonflower, tornou-se o foco de atenção em Strixhaven após uma discussão intensa com Mina Lee, a principal editora do Strixhaven Star. A fofoca rapidamente se espalhou sobre o confronto entre as duas estudantes, gerando especulações e interesse considerável na comunidade estudantil.
-
-    A discussão teve origem na insistência de Mina Lee em questionar Amy sobre seu suposto relacionamento romântico com Felisa Fang. Amy, incapaz de tolerar a importunação persistente, tomou medidas drásticas e atacou Mina com um feitiço. 
-
-    Amy Moonflower, se provou muito parecida com seu irmão e que não hesita em se posicionar quando se sente invadida. A controvérsia em torno do incidente com Mina Lee agora define Amy como uma presença marcante, cujas ações têm um impacto significativo na dinâmica social de Strixhaven.`
+    content: `Katherine, uma estudante do primeiro ano em Strixhaven, rapidamente se destacou não apenas pelos seus talentos acadêmicos, m
+    as também por suas habilidades musicais excepcionais. Recentemente, ela iniciou um projeto empolgante ao convidar colegas para formar uma banda, 
+    batizada de Mithralica. Sua paixão pela música tem recebido elogios não apenas dos estudantes, mas também dos professores, que reconhecem e admiram
+    seu talento promissor. Katherine representa uma adição vibrante à comunidade de Strixhaven, deixando sua marca não apenas nos corredores acadêmicos, 
+    mas também na rica tapeçaria artística da instituição mágica.`
+  },
+  {
+    id: 10,
+    image: require('../../../assets/img/wanda.jpeg'),
+    nome: 'Wanda Nonato',
+    colegio: '1° Ano',
+    badges: [
+      {
+        title: 'chess',
+        color: '#429ef5'
+      },
+      {
+        title: 'puta',
+        color: '#f58442'
+      },
+    ],
+    content: `Wanda Nonato, a irmã de Katherine, destaca-se em Strixhaven, mas infelizmente, não pelos motivos mais positivos. Ao contrário de sua irmã, Wanda não conquistou a simpatia dos professores, e sua presença tem sido envolvida 
+    em inúmeras polêmicas. Sua reputação entre os outros estudantes é desafiadora, já que muitos não conseguem suportar suas atitudes controversas. A falta de afinidade com os professores e o histórico tumultuado tornam Wanda uma figura
+    que gera tensão na comunidade estudantil de Strixhaven.`
   },
 ]

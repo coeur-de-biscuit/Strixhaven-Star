@@ -39,11 +39,12 @@ const StackRoutes = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      {user ?
+      {/* {user ?
         <Stack.Screen name="Home" component={TabRoutes}/>
         :
         <Stack.Screen name="Authentication" component={Authentication} />
-      }
+      } */}
+      <Stack.Screen name="Home" component={TabRoutes}/>
 
       <Stack.Screen name="NewsDetail" component={NewsDetail} />
       <Stack.Screen name="RankingDetail" component={RankingDetail} />

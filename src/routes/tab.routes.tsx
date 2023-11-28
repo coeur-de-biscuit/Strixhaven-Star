@@ -18,13 +18,13 @@ const TabRoutes = () => {
       }}
       backBehavior='history'
     >
-    <Screen
+    {/* <Screen
         name="CreatePost"
         component={CreatePost}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='plus-circle' size={30} color={color} />
         }}
-      />
+      /> */}
       <Screen
         name="Home"
         component={HomeScreen}
@@ -48,13 +48,13 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
         }}
       />
-      <Screen
+      {/* <Screen
         name="Profile"
         component={Profile}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
         }}
-      />
+      /> */}
       
     </Navigator>
   );

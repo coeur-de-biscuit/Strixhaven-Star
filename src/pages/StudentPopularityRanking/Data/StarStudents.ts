@@ -44,26 +44,18 @@ export const StarStudents = [
     isDown: true,
     topThree: false
   },
+
   {
     id: 6,
-    image: require('../../../assets/img/Tamako.jpeg'),
-    name: 'Tamako',
-    college: 'Quandrix',
-    isUp: false,
+    image: require('../../../assets/img/amelia.jpg'),
+    name: 'Amy Moonflower',
+    college: '1° Ano',
+    isUp: true,
     isDown: false,
     topThree: false
   },
   {
     id: 7,
-    image: require('../../../assets/img/robert.jpeg'),
-    name: 'Robert Jansen',
-    college: 'Prismari',
-    isUp: false,
-    isDown: false,
-    topThree: false
-  },
-  {
-    id: 8,
     image: require('../../../assets/img/aires.png'),
     name: 'Aires Oriande',
     college: '1° Ano',
@@ -72,9 +64,19 @@ export const StarStudents = [
     topThree: false
   },
   {
+    id: 8,
+    image: require('../../../assets/img/Tamako.jpeg'),
+    name: 'Tamako',
+    college: 'Quandrix',
+    isUp: false,
+    isDown: false,
+    topThree: false
+  },
+
+  {
     id: 9,
-    image: require('../../../assets/img/serana.png'),
-    name: 'Serana Corinthians',
+    image: require('../../../assets/img/katherine.jpeg'),
+    name: 'Katherine',
     college: '1° Ano',
     isUp: true,
     isDown: false,
@@ -82,8 +84,8 @@ export const StarStudents = [
   },
   {
     id: 10,
-    image: require('../../../assets/img/nerina.jpeg'),
-    name: 'Nerina',
+    image: require('../../../assets/img/wanda.jpeg'),
+    name: 'Wanda',
     college: '1° Ano',
     isUp: true,
     isDown: false,

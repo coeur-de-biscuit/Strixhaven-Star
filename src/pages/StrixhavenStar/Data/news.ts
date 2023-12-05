@@ -1,5 +1,51 @@
 export const StrixHavenNews = [
   {
+    id: 13,
+    image: 'https://th.bing.com/th/id/OIG.lrmUF2_Dh_V8N5JSAxr1?pid=ImgGn',
+    title: 'Supernova Adiciona Mais um Mês à Sua "Coleção" de Detenções!',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content: `
+    Oh, queridos leitores do Strixhaven Star, preparem-se para mais um capítulo digno de um pergaminho de comédia! Parece que a nossa adorável Supernova, conhecida por suas travessuras mágicas, decidiu adicionar mais um mês à sua já impressionante "coleção" de detenções.
+
+Desta vez, a fada talentosa não pôde resistir à tentação de soltar zumbis do departamento de necromancia no pátio do Biblioplex. Até aí, tudo bem, mas a reviravolta hilária é que esses zumbis estavam... vestidos de empregadas! Sim, você leu corretamente, meus caros leitores. Parece que Supernova decidiu dar um toque de glamour à sua última travessura, transformando o macabro em um desfile de moda digno das passarelas de Strixhaven.
+
+A administração, é claro, não viu a piada da mesma forma que nós. Supernova agora acumula um total de seis meses de detenção, marcando um recorde pessoal que faz até mesmo os feiticeiros mais experientes coçarem a cabeça em perplexidade. Parece que o "Clube das Detenções" de Supernova está crescendo mais rápido do que uma poção mal elaborada!
+
+Será que essa fada travessa continuará sua busca implacável por detenções adicionais? Só o tempo dirá. Enquanto isso, os estudantes de Strixhaven podem esperar mais risadas e talvez até algumas surpresas mágicas nas próximas travessuras de Supernova. Afinal, quem sabe o que essa mente criativa irá conjurar a seguir? Fiquem atentos, queridos leitores, e preparem-se para mais magias e risadas no mundo encantado de Strixhaven!
+
+    `,
+
+  },
+  {
+    id: 12,
+    image: 'https://cdna.artstation.com/p/assets/images/images/024/945/370/large/ognyan-zahariev-highresscreenshot00125.jpg?1584039188',
+    title: 'Aumento Histórico de Detenções no Último Mês',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content: `
+    O último mês na Escola de Magia Strixhaven foi marcado por um aumento sem precedentes no número de alunos que enfrentaram detenções, sinalizando uma série de incidentes perturbadores que abalaram a comunidade mágica.
+
+Entre os casos mais notáveis, Felisa Fang e Amélia Moonflower foram sancionadas com um mês de detenção cada após seu envolvimento em uma maldição direcionada às repórteres Mina Lee e Rubina Larkingale. A administração de Strixhaven condenou veementemente tal comportamento, ressaltando a importância de manter padrões éticos na interação entre os alunos.
+
+Rubina Larkingale, por sua vez, recebeu uma pena mais severa, com uma detenção de dois meses, depois de encomendar um grafite ofensivo que difamava Wanda Nonato e Amélia Moonflower. O incidente, que gerou indignação na comunidade, destaca a necessidade de reforçar valores de respeito e tolerância.
+
+Adicionalmente, Supernova foi submetida a um mês de detenção após seu envolvimento no episódio envolvendo zumbis vestidos com roupas de empregadas. Embora tenha sido uma ocorrência singular, a administração considerou importante tomar medidas disciplinares para reforçar a seriedade das ações da estudante.
+
+A escola está focada em fornecer apoio e recursos educativos adicionais para os alunos envolvidos, visando promover um ambiente de aprendizado saudável e respeitoso. A administração também ressalta que a responsabilidade individual é fundamental para manter a integridade da comunidade mágica de Strixhaven.
+
+Este aumento significativo no número de detenções serve como um alerta para todos os estudantes sobre a importância de agir de maneira ética e respeitosa, garantindo que Strixhaven continue sendo um ambiente propício ao crescimento acadêmico e pessoal.
+
+    `,
+
+  },
+  {
     id: 11,
     image: 'https://th.bing.com/th/id/OIG..HnsyAHPNYU8H5sp_UMZ?pid=ImgGn',
     title: 'Professora Nassari: Explorando o Mundo Mágico das Artes em Strixhaven',

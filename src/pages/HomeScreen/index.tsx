@@ -28,6 +28,34 @@ const HomeScreen = ({ route }: Props) => {
           />
           <PicturePost.PostDescription
             user_name='strix_bola'
+            description={`Esse fade é pineuzinhe da cabeça kkkkkkkk`}
+          />
+          <PicturePost.PostContent
+            post_image='https://th.bing.com/th/id/OIG.0049x6.Tq5Lj1PowFQkK?pid=ImgGn'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
+            description={`Ihhhh alguém tá com inveja`}
+          />
+          <PicturePost.PostContent
+            post_image='https://raw.githubusercontent.com/Salt-N-Pepa/Pyceptron/main/Imagem%20do%20WhatsApp%20de%202023-12-01%20%C3%A0(s)%2016.08.42_79f4a07a.jpg'
+          />
+        </PicturePost.Root>
+        <PicturePost.Root>
+          <PicturePost.PostHeader
+            user_thumb='https://i.pinimg.com/736x/59/c7/a7/59c7a7359c798839735a458aa5f0b5c2.jpg'
+            user_name='Strixhaven Ball'
+            location='Strixhaven'
+          />
+          <PicturePost.PostDescription
+            user_name='strix_bola'
             description={`C'MON KIDS. `}
           />
           <PicturePost.PostContent

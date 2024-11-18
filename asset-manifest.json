@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Strixhaven-Star/static/js/main.bbf82f83.js",
+    "main.js": "/Strixhaven-Star/static/js/main.ff86f376.js",
     "static/js/601.7a0c0a4d.js": "/Strixhaven-Star/static/js/601.7a0c0a4d.js",
     "static/media/jane.png": "/Strixhaven-Star/static/media/jane.39960b189bf869c1a23f.png",
     "static/media/ruhini.png": "/Strixhaven-Star/static/media/ruhini.c173c9703b1c5d080572.png",
@@ -31,11 +31,11 @@
     "favicon-16.png": "/Strixhaven-Star/favicon-16.png",
     "manifest.json": "/Strixhaven-Star/manifest.json",
     "serve.json": "/Strixhaven-Star/serve.json",
-    "main.bbf82f83.js.map": "/Strixhaven-Star/static/js/main.bbf82f83.js.map",
+    "main.ff86f376.js.map": "/Strixhaven-Star/static/js/main.ff86f376.js.map",
     "601.7a0c0a4d.js.map": "/Strixhaven-Star/static/js/601.7a0c0a4d.js.map"
   },
   "entrypoints": [
     "static/js/601.7a0c0a4d.js",
-    "static/js/main.bbf82f83.js"
+    "static/js/main.ff86f376.js"
   ]
 }

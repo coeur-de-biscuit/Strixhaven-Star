@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Strixhaven-Star/static/js/main.9206647f.js",
-    "static/js/601.98a8e506.js": "/Strixhaven-Star/static/js/601.98a8e506.js",
+    "main.js": "/Strixhaven-Star/static/js/main.b36ff8ac.js",
+    "static/js/993.249f343b.js": "/Strixhaven-Star/static/js/993.249f343b.js",
     "static/media/jane.png": "/Strixhaven-Star/static/media/jane.39960b189bf869c1a23f.png",
     "static/media/ruhini.png": "/Strixhaven-Star/static/media/ruhini.c173c9703b1c5d080572.png",
     "static/media/amelia2.jpg": "/Strixhaven-Star/static/media/amelia2.abe9a5bb2501bd01a0b6.jpg",
@@ -11,17 +11,14 @@
     "static/media/wanda.jpeg": "/Strixhaven-Star/static/media/wanda.fd803c81169fc0992fd5.jpeg",
     "static/media/caleb.png": "/Strixhaven-Star/static/media/caleb.e6501a0e604f92a83221.png",
     "static/media/nerina2.png": "/Strixhaven-Star/static/media/nerina2.e16aebc3f538366541bf.png",
-    "static/media/felisa2.png": "/Strixhaven-Star/static/media/felisa2.133ea862037328f8a2e8.png",
     "static/media/felisa3.png": "/Strixhaven-Star/static/media/felisa3.f773bb431360ca9a8653.png",
     "static/media/jake.jpeg": "/Strixhaven-Star/static/media/jake.668194a67e99cc396271.jpeg",
     "static/media/felisa.jpeg": "/Strixhaven-Star/static/media/felisa.eae82413e5e1b538dfad.jpeg",
     "static/media/indigo.jpeg": "/Strixhaven-Star/static/media/indigo.36fae4d45ba16023321d.jpeg",
     "static/media/layla.png": "/Strixhaven-Star/static/media/layla.1543cd584732a902b433.png",
     "static/media/helsa.jpeg": "/Strixhaven-Star/static/media/helsa.1b59d16dea301b774c66.jpeg",
-    "static/media/Tamako.jpeg": "/Strixhaven-Star/static/media/Tamako.42b8e2f345d0b8485513.jpeg",
     "static/media/katherine.jpeg": "/Strixhaven-Star/static/media/katherine.337d3e8f8cc3776e3e7a.jpeg",
     "static/media/aquamarine.jpeg": "/Strixhaven-Star/static/media/aquamarine.092443120933dc327756.jpeg",
-    "static/media/nerina.jpeg": "/Strixhaven-Star/static/media/nerina.80f4845da1e006f7498b.jpeg",
     "static/media/miles.jpeg": "/Strixhaven-Star/static/media/miles.87d445c09cc981a1cda4.jpeg",
     "static/media/luna_mox.jpeg": "/Strixhaven-Star/static/media/luna_mox.e357e78fcf01ae61ddf5.jpeg",
     "static/media/Feather.ttf": "/Strixhaven-Star/static/media/Feather.0f5d9cede2e831f3fc80.ttf",
@@ -31,11 +28,11 @@
     "favicon-16.png": "/Strixhaven-Star/favicon-16.png",
     "manifest.json": "/Strixhaven-Star/manifest.json",
     "serve.json": "/Strixhaven-Star/serve.json",
-    "main.9206647f.js.map": "/Strixhaven-Star/static/js/main.9206647f.js.map",
-    "601.98a8e506.js.map": "/Strixhaven-Star/static/js/601.98a8e506.js.map"
+    "main.b36ff8ac.js.map": "/Strixhaven-Star/static/js/main.b36ff8ac.js.map",
+    "993.249f343b.js.map": "/Strixhaven-Star/static/js/993.249f343b.js.map"
   },
   "entrypoints": [
-    "static/js/601.98a8e506.js",
-    "static/js/main.9206647f.js"
+    "static/js/993.249f343b.js",
+    "static/js/main.b36ff8ac.js"
   ]
 }

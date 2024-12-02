@@ -9,7 +9,6 @@ import CreatePost from '../pages/CreatePost';
 import Cuitter from '../pages/Cuitter';
 import { MyTabsProfile } from './toptabProfile.routes';
 import Profile from '../pages/Profile';
-import EditProfile from '../pages/Profile/EditProfile';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -50,8 +49,8 @@ const TabRoutes = () => {
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
         }}
-      />
-      <Screen
+      />*/}
+      {/* <Screen
         name="Cuitter"
         component={Cuitter}
         options={{
@@ -60,7 +59,7 @@ const TabRoutes = () => {
       /> */}
       <Screen
         name="Profile"
-        component={EditProfile}
+        component={Profile}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='twitter' size={20} color={color} />
         }}

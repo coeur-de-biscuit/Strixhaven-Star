@@ -17,7 +17,7 @@ const Authentication: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://3124-2804-1e68-c201-518b-78ea-47d1-13ce-1a1b.ngrok-free.app/api/authentication/login', {
+      const response = await fetch('https://localhost:7209/api/authentication/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,6 +44,7 @@ const Authentication: React.FC = () => {
       if (data?.token) {
         // Save the token
         await AsyncStorage.setItem('userToken', data.token);
+        await AsyncStorage.setItem('userId', data.userID);
         Alert.alert('Success', 'Login successful');
         // Navigate to Home screen
         navigation.navigate('Home' as never)

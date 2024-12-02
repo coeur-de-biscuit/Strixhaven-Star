@@ -9,6 +9,8 @@ import { MyTabsProfile } from './toptabProfile.routes';
 import { useContext, useEffect } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 import { useNavigation } from '@react-navigation/native';
+import CreateProfile from '../pages/Profile/CreateProfile';
+import EditProfile from '../pages/Profile/CreateProfile';
 
 export type RootStackParamList = {
   Authentication: {};
@@ -17,6 +19,7 @@ export type RootStackParamList = {
   RankingDetail: { id: number };
   RankingDetailPopularity: { id: number };
   Profile: { id: number };
+  EditProfile: {};
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -49,6 +52,7 @@ const StackRoutes = () => {
       <Stack.Screen name="RankingDetail" component={RankingDetail} />
       <Stack.Screen name="RankingDetailPopularity" component={RankingDetailPopularity} />
       <Stack.Screen name="Profile" component={MyTabsProfile} />
+      <Stack.Screen name="EditProfile" component={EditProfile} />
     </Stack.Navigator>
   );
 }

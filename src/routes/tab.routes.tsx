@@ -4,9 +4,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from '../pages/HomeScreen';
 import StrixhavenStar from '../pages/StrixhavenStar';
-import Profile from '../pages/Profile';
 import { MyTabs } from './toptab.routes';
 import CreatePost from '../pages/CreatePost';
+import Cuitter from '../pages/Cuitter';
+import { MyTabsProfile } from './toptabProfile.routes';
+import Profile from '../pages/Profile';
+import EditProfile from '../pages/Profile/EditProfile';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -18,14 +21,14 @@ const TabRoutes = () => {
       }}
       backBehavior='history'
     >
-    {/* <Screen
+      {/* <Screen
         name="CreatePost"
         component={CreatePost}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='plus-circle' size={30} color={color} />
         }}
       /> */}
-      <Screen
+      {/* <Screen
         name="Home"
         component={HomeScreen}
         options={{
@@ -40,7 +43,7 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
         }}
       />
-  
+
       <Screen
         name="StudentRanking"
         component={MyTabs}
@@ -48,14 +51,21 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
         }}
       />
-      {/* <Screen
-        name="Profile"
-        component={Profile}
+      <Screen
+        name="Cuitter"
+        component={Cuitter}
         options={{
-          tabBarIcon: ({ size, color }) => <Feather name='user' size={20} color={color} />
+          tabBarIcon: ({ size, color }) => <Feather name='twitter' size={20} color={color} />
         }}
       /> */}
-      
+      <Screen
+        name="Profile"
+        component={EditProfile}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='twitter' size={20} color={color} />
+        }}
+      />
+
     </Navigator>
   );
 }

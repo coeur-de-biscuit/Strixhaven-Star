@@ -1,39 +1,37 @@
 import React, { useState } from 'react';
 import { Dimensions, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { FIREBASE_AUTH } from '../../../../../FirebaseConfig';
-
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../../routes/stack.routes';
 const dimensions = Dimensions.get('window');
 
-const ProfileInfo = () => {
+const ProfileInfoAmy = () => {
   const [bio, setBio] = useState('');
-
+  var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   const onChange = (textValue: string) => setBio(textValue);
 
   return (
-    <View style={{marginBottom: 20}}>
-      <View style={{ alignItems: 'center'}}>
+    <View style={{ marginBottom: 20 }}>
+      <Ionicons
+        name='arrow-back-outline'
+        size={24}
+        onPress={() => navigation.goBack()}
+        color={'black'}
+        style={{ marginLeft: 30 }}
+      />
+      <View style={{ alignItems: 'center' }}>
         <View style={{ width: 100, height: 100, borderRadius: 50 }}>
           <Image
-            source={{ uri: 'https://th.bing.com/th/id/OIG.XmNgwOLSidAvsb5888MN?pid=ImgGn' }}
+            source={{ uri: 'https://th.bing.com/th/id/OIG3.sxvvpNs.Hr5bpd8BzlHZ?pid=ImgGn' }}
             style={{ flex: 1, width: undefined, height: undefined, borderRadius: 50 }}
           />
         </View>
         <View>
-          <Text style={{ fontWeight: 'bold', fontSize: 28, color: 'black' }}>Nerina</Text>
-          <Text style={{ color: 'black' }}>Prismeer, Faerie</Text>
+          <Text style={{ fontWeight: 'bold', fontSize: 28, color: 'black' }}>Amelia Moonflower</Text>
+          <Text style={{ color: 'black', alignSelf: 'center' }}>Prismeer, Faerie</Text>
         </View>
-        <View style={{marginVertical: 20, flexDirection: 'row', justifyContent: 'space-evenly', width: '60%'}}>
-          <TouchableOpacity>
-            <View style={{ backgroundColor: '#FF3CE0', padding: 10, borderRadius: 30 }}>
-              <Text style={{ marginHorizontal: 20, color: 'white', fontWeight: 'bold' }}>Seguir </Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={(() => FIREBASE_AUTH.signOut())}>
-            <View style={{ backgroundColor: '#1bb5db', padding: 10, borderRadius: 30 }}>
-              <Text style={{ marginHorizontal: 20, color: 'white', fontWeight: 'bold' }}>Sair</Text>
-            </View>
-          </TouchableOpacity>
-        </View>
+
       </View>
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', padding: 12 }}>
         <View style={{ alignItems: 'center', flexDirection: 'column' }}>
@@ -65,4 +63,4 @@ const ProfileInfo = () => {
   );
 }
 
-export default ProfileInfo;
+export default ProfileInfoAmy;

@@ -59,7 +59,7 @@ const RankingDetailPopularity = ({ route }: RankingDetailProps) => {
               </View>
               <View style={{ margin: 30 }}>
                 <Text style={{ fontSize: 20, color: '#504b4b' }}>
-                 {item.content}
+                  {item.content}
                 </Text>
               </View>
             </>

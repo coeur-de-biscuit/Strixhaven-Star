@@ -50,7 +50,7 @@ export default ({ icon, placeholder, onChangeText, value, keyboardType, errorMes
             marginLeft: 10,
             color: 'black',
             //@ts-ignore
-            outlineStyle: 'none' 
+            outlineStyle: 'none'
           }}
           onChangeText={onChangeText}
           value={value}

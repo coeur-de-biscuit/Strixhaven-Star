@@ -1,5 +1,4 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import Profile from '../pages/Profile';
 import HeaderRanking from '../components/HeaderRanking';
 import StudentPopularityRanking from '../pages/StudentPopularityRanking';
 import StudentRanking from '../pages/StudentCombatRanking';

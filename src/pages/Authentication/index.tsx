@@ -1,44 +1,62 @@
-import React, { useState, useContext } from 'react';
-import { Image, Text, View, TouchableOpacity, ActivityIndicator } from 'react-native';
+import React, { useState } from 'react';
+import { Image, Text, View, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
 import InputWithIcon from '../../components/InputWithIcon';
-import { FIREBASE_AUTH } from '../../../FirebaseConfig';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { AuthContext } from '../../contexts/Auth/AuthContext';
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../../routes/stack.routes';
 
 const Authentication: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const auth = FIREBASE_AUTH;
-
-  const signIn = async () => {
+  var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
+  // Function to handle login
+  const handleLogin = async () => {
     setLoading(true);
+
     try {
-      const response = await signInWithEmailAndPassword(auth, email, password)
-      console.log(response);
-    } catch (error: any) {
-      console.log(error);
-      alert('Registration failed: ' + error.message);
+      const response = await fetch('https://3124-2804-1e68-c201-518b-78ea-47d1-13ce-1a1b.ngrok-free.app/api/authentication/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          Username: email,
+          Password: password,
+        }),
+      });
+
+      // Check for a successful response
+      if (!response.ok) {
+        const errorData = await response.json();
+        Alert.alert('Error', errorData?.message || 'Login failed');
+        setLoading(false);
+        return;
+      }
+
+      // Parse the response JSON
+      const data = await response.json();
+
+      console.log(data)
+
+      if (data?.token) {
+        // Save the token
+        await AsyncStorage.setItem('userToken', data.token);
+        Alert.alert('Success', 'Login successful');
+        // Navigate to Home screen
+        navigation.navigate('Home' as never)
+      } else {
+        Alert.alert('Error', 'No token received');
+      }
+    } catch (error) {
+      console.error('Login Error:', error);
+      Alert.alert('Error', 'Something went wrong');
     } finally {
       setLoading(false);
     }
-  }
-
-  const signUp = async () => {
-    setLoading(true);
-    try {
-      const response = await createUserWithEmailAndPassword(auth, email, password)
-      console.log(response);
-      alert('Check your e-mail');
-    } catch (error: any) {
-      console.log(error);
-      alert('Registration failed: ' + error.message);
-    } finally {
-      setLoading(false);
-    }
-  }
+  };
 
 
   return (
@@ -50,43 +68,38 @@ const Authentication: React.FC = () => {
         />
       </View>
       <InputWithIcon
-        icon='person'
-        placeholder='Usuario'
+        icon="person"
+        placeholder="Usuário"
         value={email}
         onChangeText={(text) => setEmail(text)}
       />
       <InputWithIcon
-        icon='lock-closed'
-        placeholder='Senha'
+        icon="lock-closed"
+        placeholder="Senha"
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
-
-      {
-        loading ? <ActivityIndicator size='large' color={'red'} />
-          :
-          <>
-            <TouchableOpacity
-              onPress={signIn}
-              style={{
-                backgroundColor: '#3f3a5e',
-                padding: 10,
-                borderRadius: 8,
-                marginHorizontal: 10,
-                flexDirection: 'row',
-                justifyContent: 'center',
-                alignItems: 'center',
-                width: 220
-              }}>
-              <Text style={{ color: 'white' }}>Entrar</Text>
-            </TouchableOpacity>
-
-           
-          </>
-      }
-
+      {loading ? (
+        <ActivityIndicator size="large" color={'red'} />
+      ) : (
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#3f3a5e',
+            padding: 10,
+            borderRadius: 8,
+            marginHorizontal: 10,
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: 220,
+          }}
+          onPress={handleLogin}
+        >
+          <Text style={{ color: 'white' }}>Entrar</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
-}
+};
 
 export default Authentication;

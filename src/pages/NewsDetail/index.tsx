@@ -41,7 +41,7 @@ const NewsDetail = ({ route }: Props) => {
                   style={{ flex: 1, height: undefined, width: undefined, borderRadius: 7 }}
                 />
               </View>
-              <Text style={{ fontSize: 18, lineHeight: 30, marginTop: 20 }}>
+              <Text style={{ fontSize: 18, lineHeight: 30, marginTop: 20, textAlign: 'justify' }}>
                 {item.content}
               </Text>
             </View>

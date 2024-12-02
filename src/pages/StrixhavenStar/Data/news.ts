@@ -1,23 +1,144 @@
 export const StrixHavenNews = [
   {
+    id: 17,
+    image: 'https://mtglore.com.br/wp-content/uploads/2021/07/Arcavios.jpg',
+    title: 'Estranho acontecimento deixa alunos de Strixhaven assustados e preocupados com sua segurança.',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content:
+      `
+ 
+
+Na tarde desta terça-feira, a tranquilidade da prestigiada academia Strixhaven foi abruptamente interrompida por um ataque sem precedentes. Fendas dimensionais para diversos planos diferentes se abriram simultaneamente em vários pontos estratégicos do campus, forçando os estudantes a abandonarem suas atividades regulares e se defenderem das criaturas hostis que emergiram dessas brechas interdimensionais.
+
+Os relatos dos incidentes revelam que não houve padrões identificáveis nesses ataques. Um grupo de alunos do primeiro ano teve que enfrentar dois Cães do Inferno na biblioteca principal, enquanto outros estudantes, próximos ao pátio central, se viram diante de demônios de várias classes. Os professores da academia agiram rapidamente para conter a situação, e após horas de intenso trabalho, garantiram que nenhuman fenda restava. Eles asseguram que não há mais perigo imediato para a comunidade acadêmica e uma investigação minuciosa já está em andamento para determinar a origem desses portais.
+
+As teorias sobre o incidente se multiplicam pelos corredores da academia. Muitos alunos dos anos superiores, especialmente aqueles versados em história mágica, começaram a sussurrar sobre possível envolvimento dos Oriq, uma notória sociedade secreta que supostamente opera nas sombras do campus de Strixhaven há gerações. Alguns especulam que este pode ter sido apenas um teste para algo maior que está por vir.`,
+
+  },
+  {
+    id: 16,
+    image: 'https://preview.redd.it/f1wu0cn2yly61.png?auto=webp&s=9fa7ecb1b22206ccff6932e4ec443cc1f63df403',
+    title: 'Novidades em Strixhaven: Alunos Ganham Permissão para Explorar Sigil',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content:
+      `
+Em uma decisão surpreendente, os diretores de Strixhaven anunciaram recentemente que os alunos agora têm permissão para explorar partes de Sigil. Esta nova política permite que os estudantes saiam do campus e visitem as áreas de Clerk's Ward e Lady's Ward, desde que sigam regras estritas de conduta.
+
+O reitor Nassari explicou a decisão: "Acreditamos que esta experiência proporcionará aos nossos alunos uma compreensão mais ampla do multiverso. No entanto, enfatizamos a importância de manter o decoro e representar Strixhaven com dignidade."
+
+As regras incluem:
+
+- Permanecer exclusivamente nas áreas designadas de Clerk's Ward e Lady's Ward
+- Retornar ao campus antes do anoitecer
+- Manter-se em grupos de pelo menos três alunos
+- Portar identificação de Strixhaven em todos os momentos
+- Não perturbar os Dabus.
+- Os estudantes estão proibidos de participarem de qualquer organização de Sigil.
+
+Esta nova liberdade tem gerado entusiasmo entre os alunos. Felisa Fang comentou: "Legal agora vão poder explorar a maluquice que é minha cidade. Recomendo o Bar do Corpo Fumegante" quando comentamos ser em um dos distritos proibidos ela só piscou e se despediu.
+
+Por outro lado, alguns professores expressaram preocupação. O Professora Onyx alertou: "Sigil pode ser perigosa. Espero que nossos alunos mantenham sua vigilância e bom senso, ou não, não me importo."
+
+Enquanto a comunidade de Strixhaven se adapta a esta mudança, resta saber como esta nova experiência influenciará o desenvolvimento acadêmico e pessoal dos alunos. Continuarei acompanhando e relatando os desdobramentos desta emocionante novidade.   `,
+
+  },
+  {
+    id: 15,
+    image: 'https://th.bing.com/th/id/OIG1.YPZTJbEBjvbd8GEQDQn1?pid=ImgGn',
+    title: 'Nova aluna em Strixhaven: Promete causar',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Grayson Wildemere',
+    content:
+      `
+        As adições tardias ao corpo estudantil de Strixhaven parecem estar se tornando uma tendência. É a segunda vez que um novo aluno chega atrasado à escola, sendo a primeira nossa doce ninfa, Nerina. Desta vez, a novata é uma anja de Nova Capenna chamada Layla Baskerville.
+
+Layla chegou a Sigil pelo trem planar, acompanhada de um irmão de Jane Moriarty. Ela apareceu há uma semana, enquanto todos nós aproveitávamos nosso tempo livre. Embora pareça ser uma garota reservada, consegui conversar brevemente com ela na festa de Felisa.
+
+Grayson: Então, Layla, você está gostando da festa?
+
+Layla: Está muito boa. Nunca ouvi música como essa antes, mas estou acostumada com esse tipo de ambiente.
+
+Grayson: Vi você conversando com Jane Moriarty. Vocês se conhecem?
+
+Layla: Ah, sim, nos conhecemos muito bem. Ela é minha fã, sabia? Só que me decepcionei com ela, fiquei sabendo que está namorando uma fadinha aviadada. Pobrezinha (risos).
+
+Grayson: Você quer dizer Ori? Eles estão namorando há um tempo, parece.
+
+Layla: Eu sei, né? Tem maluca pra tudo. Os irmãos dela odeiam, principalmente John. Você tinha que ver como ele ficava falando comigo, aborrecido: "Aquela escola está corrompendo a Janny. Daqui a pouco vai voltar namorando uma mulher".
+
+Grayson: Nossa, o irmão dela parece ter umas visões bem ultrapassadas.
+
+Layla: Eu sei, mas ele é um grande gostoso, intenso, perigoso... Tem alguns assim em Strixhaven?
+
+Grayson: Hmm, não sei. Que tal o Kevin, aquele rapaz ali?
+
+Layla: Aquele ali abraçado com aquela garota?(Risos) Não muito obrigada, prefiro um soco. Eu vou ali no bar retirar outro drink com sua liçensa.
+
+Após essa conversa intrigante, observei Layla se afastar em direção ao bar. Sua atitude confiante e suas palavras ousadas certamente deixaram uma impressão. Enquanto a via se misturar com os outros alunos, não pude deixar de me perguntar como sua presença vai afetar o dia a dia em Strixhaven.
+      `,
+
+  },
+  {
+    id: 14,
+    image: 'https://github.com/coeur-de-biscuit/Pyceptron/blob/main/Black%20Orange%20Creative%20Bold%20Dark%20Halloween%20Party%20Flyer.png?raw=true',
+    title: 'Festa na Mansão Fang? Uma Vergonha para Strixhaven!',
+    badgeTitle: 'Notícia',
+    badgeColor: '#0388fc',
+    readingTime: '4 minutos',
+    tipo: 1,
+    writter: 'Rubina Larkingale',
+    content: `
+    Eu já esperava pouca coisa da festa de Halloween da Felisa Fang, mas confesso que superou minhas (baixas) expectativas. O evento, que mais parecia um encontro de degenerados do que uma celebração estudantil, foi um verdadeiro desastre e uma mancha na reputação de Strixhaven.
+
+Vamos falar sobre os "pontos altos" da noite, começando pelo caos generalizado assim que os portões da mansão se abriram. Uma multidão sem controle invadiu a propriedade, como se fosse a primeira vez que viam uma festa na vida! A decoração? Ok, a mansão tem um certo charme gótico, mas vamos ser honestos: bartenders zumbis? Sério? Já está na hora de crescer.
+
+E sobre o comportamento dos presentes? Uma vergonha completa! DJ Charlie e Felisa mal conseguiam se manter em pé de tão alteradas antes mesmo dos primeiros convidados chegarem. Isso é o tipo de exemplo que queremos seguir? Claro que não. O nível das fantasias também estava risível. Que original, Felisa, se vestir de enfermeira "sexy" — que escolha inovadora e nada clichê.
+
+E então, como se o caos não fosse suficiente, tivemos um verdadeiro show de horrores no meio da festa: Felisa, completamente descontrolada, tentou brigar com sua ex-namorada Amelia no meio da pista de dança. E o que ela ganhou? Um soco na cara da Aires Oriande. Claramente, uma atitude nobre e digna da nossa querida "anfitriã". E ainda tivemos que aguentar Amelia fingindo que já havia superado tudo — que descoberta chocante foi saber, mais tarde, que ainda estavam juntas. O drama barato é a cara dessa turma.
+
+Enquanto isso, outros "destaques" da noite incluem a dupla Wanda e Elliot desaparecendo para sabe-se lá o que em algum canto escuro da mansão. Inapropriado é pouco. E as pessoas desmaiando na pista? Foi ridículo ver um bando de estudantes caindo como moscas ao som da DJ Charlie, sendo arrastados pelos zumbis de Felisa. Quase um ritual de sacrifício!
+
+E nem me façam falar sobre a patética saída em grupo de Felisa com sua turminha: Katherine, Kevin, Ori, Serana, Nerina e, claro, Amelia. Todos juntos, como se fossem personagens principais de um drama adolescente sem enredo. O que foram fazer? Prefiro nem imaginar, mas sei que deveriam ter saído de lá direto para a detenção.
+
+Alguém precisa ter a coragem de dizer a verdade: essas festas são uma vergonha para Strixhaven. Não são eventos dignos de uma instituição que deveria prezar pelo estudo e pelo respeito entre seus alunos. É hora de os professores intervirem e proibirem essas "celebrações" descontroladas antes que nossa escola se torne conhecida apenas por esses vexames.
+
+Para os que acham que estou exagerando, sugiro uma boa reflexão: é isso que queremos como parte da nossa experiência em Strixhaven? Se a resposta for sim, estamos todos perdidos.`,
+
+  },
+  {
     id: 13,
-    image: 'https://th.bing.com/th/id/OIG.lrmUF2_Dh_V8N5JSAxr1?pid=ImgGn',
-    title: 'Supernova Adiciona Mais um Mês à Sua "Coleção" de Detenções!',
+    image: 'https://th.bing.com/th/id/OIG1.dsaUJECNmcK.5KuaEoFe?pid=ImgGn',
+    title: 'O Halloween na Mansão Fang: Uma Noite para Não Esquecer!',
     badgeTitle: 'Notícia',
     badgeColor: '#0388fc',
     readingTime: '4 minutos',
     tipo: 1,
     writter: 'Grayson Wildemere',
     content: `
-    Oh, queridos leitores do Strixhaven Star, preparem-se para mais um capítulo digno de um pergaminho de comédia! Parece que a nossa adorável Supernova, conhecida por suas travessuras mágicas, decidiu adicionar mais um mês à sua já impressionante "coleção" de detenções.
+    Na última sexta-feira, os portões da mansão Fang se abriram e uma horda de estudantes ansiosos invadiu o local. Fomos recebidos por uma decoração impecável e assustadoramente linda. A arquitetura gótica da mansão já garantia a vibe sombria, mas os bartenders zumbis, servindo poções coloridas, deram um toque extra à ambientação de arrepiar!
 
-Desta vez, a fada talentosa não pôde resistir à tentação de soltar zumbis do departamento de necromancia no pátio do Biblioplex. Até aí, tudo bem, mas a reviravolta hilária é que esses zumbis estavam... vestidos de empregadas! Sim, você leu corretamente, meus caros leitores. Parece que Supernova decidiu dar um toque de glamour à sua última travessura, transformando o macabro em um desfile de moda digno das passarelas de Strixhaven.
+DJ Charlie e Felisa já estavam visivelmente chapadas quando os primeiros convidados começaram a chegar. Logo, a mansão ficou lotada, com uma impressionante variedade de fantasias: destaque para a anfitriã, Felisa Fang, que encarnou uma enfermeira lindíssima (e um tanto "mordaz"), e para a dupla Kevin e Elliot, que vieram vestidos um como o outro. Já Nerina, de bruxa misteriosa, e Serana, com uma fantasia tribal de arrepiar, roubaram olhares e elogios por onde passavam.
 
-A administração, é claro, não viu a piada da mesma forma que nós. Supernova agora acumula um total de seis meses de detenção, marcando um recorde pessoal que faz até mesmo os feiticeiros mais experientes coçarem a cabeça em perplexidade. Parece que o "Clube das Detenções" de Supernova está crescendo mais rápido do que uma poção mal elaborada!
+A vibe da festa estava incrível e melhorou quando o drama começou: Felisa, ao ver sua ex-namorada Amelia se divertindo, foi tomada por uma onda de ciúmes e tentou tirar satisfação. O que ninguém esperava era que Aires Oriande surgisse do nada e acertasse um soco que nocauteou a vampira! O golpe final veio de Amelia, que afirmou em alto e bom som que as duas não tinham mais nada (o que, mais tarde, descobrimos ser uma grande mentira).
 
-Será que essa fada travessa continuará sua busca implacável por detenções adicionais? Só o tempo dirá. Enquanto isso, os estudantes de Strixhaven podem esperar mais risadas e talvez até algumas surpresas mágicas nas próximas travessuras de Supernova. Afinal, quem sabe o que essa mente criativa irá conjurar a seguir? Fiquem atentos, queridos leitores, e preparem-se para mais magias e risadas no mundo encantado de Strixhaven!
+Enquanto isso, nos cantos escuros da festa, Wanda e Elliot desapareceram após um beijo ardente — uh la la! E a loucura não parou por aí: várias pessoas desmaiaram na pista de dança e foram carregadas pelos bartenders zumbis de Felisa para fora. Parece que a batida da DJ Charlie estava literalmente derrubando a galera.
 
-    `,
+A festa entrou em uma fase mais tranquila até que um grupo de destaque — Felisa, Katherine, Kevin, Ori, Serana, Nerina, e, surpresa das surpresas, Amelia — desapareceu misteriosamente. O que foram fazer ( ͡° ͜ʖ ͡°)? Só a Lady sabe! O que sabemos é que só apareceram de volta por volta das 3 da manhã.
+
+Para encerrar a noite com uma reviravolta digna de novela, Rubina, que já estava afogando as mágoas nos drinks, confrontou Felisa ao vê-la ao lado de Amelia e soltou a icônica frase: "Você vai continuar sofrendo por ela?" Ao que Felisa respondeu: "E você quer que eu sofra por quem, por você?" — o maior fora da história!
+
+Depois disso, o clima esfriou um pouco. As músicas começaram a tocar no modo automático, e a adrenalina deu lugar a conversas filosóficas sobre a vida e os amores perdidos. Uma coisa é certa: foi mais uma festa com o selo de qualidade Felisa Fang.`,
 
   },
   {
@@ -41,54 +162,6 @@ Adicionalmente, Supernova foi submetida a um mês de detenção após seu envolv
 A escola está focada em fornecer apoio e recursos educativos adicionais para os alunos envolvidos, visando promover um ambiente de aprendizado saudável e respeitoso. A administração também ressalta que a responsabilidade individual é fundamental para manter a integridade da comunidade mágica de Strixhaven.
 
 Este aumento significativo no número de detenções serve como um alerta para todos os estudantes sobre a importância de agir de maneira ética e respeitosa, garantindo que Strixhaven continue sendo um ambiente propício ao crescimento acadêmico e pessoal.
-
-    `,
-
-  },
-  {
-    id: 11,
-    image: 'https://th.bing.com/th/id/OIG..HnsyAHPNYU8H5sp_UMZ?pid=ImgGn',
-    title: 'Professora Nassari: Explorando o Mundo Mágico das Artes em Strixhaven',
-    badgeTitle: 'Notícia',
-    badgeColor: '#0388fc',
-    readingTime: '4 minutos',
-    tipo: 1,
-    writter: 'Professora Nassari',
-    content: `
-    Queridos estudantes mágicos de Strixhaven, a magia que envolve este lugar extraordinário não se limita apenas aos feitiços e encantamentos. É com grande entusiasmo que encorajo cada um de vocês a explorar e nutrir suas paixões artísticas.
-
-Strixhaven é mais do que uma escola de magia; é um centro de expressão criativa, um solo fértil para o florescimento de todas as formas de arte. Seja na música, pintura, poesia ou qualquer outra manifestação, há um espaço aqui para todos os tipos de artistas.
-
-Permitam-me compartilhar um exemplo inspirador: Katherine, uma talentosa estudante do primeiro ano, iniciou sua busca por membros para formar uma banda aqui em Strixhaven, a Mithralica. Isso demonstra que não importa se você é um veterano ou um calouro; há sempre espaço para trazer sua criatividade para a luz.
-
-A magia da música de Katherine se espalha como um feitiço encantador, conectando estudantes através das notas e acordes. Este é apenas um dos inúmeros exemplos do que é possível alcançar quando se busca apaixonadamente sua arte.
-
-Quero incentivar cada um de vocês a explorar e celebrar sua própria forma única de expressão. Seja participando de clubes existentes, como o "Chatíssimo Clube do Livro" ou os times de Mage Tower, ou iniciando seus próprios projetos, Strixhaven está aqui para nutrir e apoiar suas paixões.
-
-Lembrem-se, a magia está não apenas nos feitiços lançados, mas também nas pinceladas de uma tela, nas palavras de uma poesia ou nas notas de uma melodia. Que este seja o ano em que descobrimos e compartilhamos nossas paixões artísticas, tornando Strixhaven um local ainda mais vibrante e inspirador.
-
-Com toda a minha estima,
-
-Professora Nassari
-
-    `,
-
-  },
-  {
-    id: 10,
-    image: 'https://th.bing.com/th/id/OIG.Stweyk72V1j7wZOlSasd?pid=ImgGn',
-    title: 'Conhecendo os Clubes: O inesperado sucesso do clube de Xadrez',
-    badgeTitle: 'Notícia',
-    badgeColor: '#0388fc',
-    readingTime: '4 minutos',
-    tipo: 1,
-    writter: 'Grayson Wildemere',
-    content: `
-    O primeiro encontro do Clube de Xadrez de Strixhaven tornou-se um evento histórico na instituição, com um número recorde de inscrições que superou as expectativas dos organizadores. Os responsáveis pelo clube expressaram entusiasmo diante da adesão massiva, destacando a diversidade de habilidades e o potencial para uma temporada memorável.
-
-    O Clube de Xadrez, conhecido por ser um ambiente intelectualmente estimulante, reuniu não apenas entusiastas, mas também alguns dos melhores jogadores de Strixhaven. Entre os participantes notáveis estão Tamako, a capitã do time de Mage Tower de Quandrix, e Stephen Harkin, um estrategista conhecido por suas habilidades excepcionais no tabuleiro.
-
-    Os responsáveis pelo Clube de Xadrez estão planejando uma série de eventos, torneios e atividades ao longo do ano, criando um espaço propício para o aprimoramento das habilidades e o fortalecimento do espírito de comunidade entre os amantes do xadrez em Strixhaven.
 
     `,
 
@@ -292,28 +365,6 @@ Professora Nassari
     Além dos benefícios acadêmicos e mágicos, participar de um clube em Strixhaven oferece oportunidades significativas para o desenvolvimento pessoal. Os alunos têm a chance de assumir papéis de liderança, organizar eventos e até mesmo contribuir para a criação de novos clubes, desenvolvendo habilidades de liderança e trabalho em equipe.
     
     Ao unirem-se a um clube em Strixhaven, os alunos não apenas aprimoram suas habilidades mágicas, mas também enriquecem sua experiência acadêmica, criando uma comunidade mágica mais forte e vibrante. Em um mundo onde a magia é mais do que feitiços, mas uma jornada compartilhada, a participação em clubes é uma porta aberta para um universo de descobertas mágicas.`,
-
-  },
-  {
-    id: 6,
-    image: 'https://th.bing.com/th/id/OIG.RAnigW4AuQps6aVBAGN0?pid=ImgGn',
-    title: 'Ruhini Abre Inscrições para o Novo Esquadrão de Líderes de Torcida de Strixhaven: Venha Ser Parte da Energia Mágica!',
-    badgeTitle: 'Notícia',
-    badgeColor: '#0388fc',
-    readingTime: '1 minutos',
-    tipo: 2,
-    writter: 'Grayson Wildemere',
-    content: `Preparem-se para agitar as varinhas e soltar os feitiços de animação, pois Ruhini, a talentosa estudante de Prismari, está recrutando novos membros para o renomado Grupo de Líderes de Torcida de Strixhaven! Com a intenção de elevar a energia mágica nos eventos esportivos e acadêmicos da escola, Ruhini está em busca de bruxos e bruxas entusiasmados para se juntarem a ela nessa emocionante jornada.
-
-    Os interessados em fazer parte do grupo de elite de líderes de torcida de Strixhaven terão a oportunidade de demonstrar suas habilidades mágicas, entusiasmo contagiante e, é claro, um espírito competitivo. Ruhini, conhecida por suas performances dinâmicas e sua paixão pela magia de entretenimento, está ansiosa para formar um esquadrão diversificado e talentoso que elevará o ânimo em todos os cantos de Strixhaven.
-    
-    "A magia é uma arte que vai além dos livros e salas de aula. Quero criar uma atmosfera onde todos possam se unir, celebrar e se inspirar uns nos outros, seja nos campos de Quadribol ou nas competições acadêmicas," comentou Ruhini.
-    
-    As audições para o Grupo de Líderes de Torcida de Strixhaven estão marcadas para a próxima semana, e os aspirantes a líderes de torcida terão a chance de mostrar seus talentos e personalidade única. Ruhini enfatiza que não há requisitos específicos além do desejo de se divertir, espalhar a alegria mágica e inspirar a comunidade de Strixhaven.
-    
-    A diretora de Prismari, Nassari, expressou seu apoio entusiasmado à iniciativa de Ruhini, destacando a importância de integrar diversas formas de magia na vida acadêmica. "Os líderes de torcida desempenham um papel vital na construção de uma comunidade unida e vibrante. Encorajo todos os estudantes a considerarem esta oportunidade única de canalizar sua magia de uma maneira diferente e emocionante," afirmou Nassari.
-    
-    Se você tem paixão pela magia, energia contagiante e desejo de fazer parte de algo extraordinário, não perca a oportunidade de se juntar ao Grupo de Líderes de Torcida de Strixhaven. Prepare-se para espalhar a magia e ser uma parte fundamental da incrível experiência que é a vida em Strixhaven!`,
 
   },
 ]

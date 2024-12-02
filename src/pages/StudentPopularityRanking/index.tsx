@@ -9,7 +9,7 @@ const StudentPopularityRanking: React.FC = () => {
 
   return (
     <ScrollView>
-      <View> 
+      <View>
         <TopThree />
         <TopRest />
       </View>

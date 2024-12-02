@@ -15,10 +15,10 @@ const TopThree = () => {
           onPress={() => navigation.navigate('RankingDetailPopularity', { id: 2 })}
         >
           <TopThreeCard
-            image={require('../../../../assets/img/kevin.jpeg')}
+            image={require('../../../../assets/img/aires.png')}
             position='2'
-            name='Kevin'
-            collegeName='Witherbloom'
+            name='Aires'
+            collegeName='1° Ano'
             size={100}
           />
         </TouchableOpacity>
@@ -26,10 +26,10 @@ const TopThree = () => {
           onPress={() => navigation.navigate('RankingDetailPopularity', { id: 1 })}
         >
           <TopThreeCard
-            image={require('../../../../assets/img/jane.png')}
+            image={require('../../../../assets/img/felisa2.png')}
             position='1'
-            name='Jane Moriarty'
-            collegeName='Lorehold'
+            name='Felisa Fang'
+            collegeName='Silverquill'
             size={120}
           />
         </TouchableOpacity>
@@ -37,10 +37,10 @@ const TopThree = () => {
           onPress={() => navigation.navigate('RankingDetailPopularity', { id: 3 })}
         >
           <TopThreeCard
-            image={require('../../../../assets/img/ruhini.png')}
+            image={require('../../../../assets/img/amelia2.jpg')}
             position='3'
-            name='Ruhini'
-            collegeName='Prismari'
+            name='Amelia'
+            collegeName='1° Ano'
             size={90}
           />
         </TouchableOpacity>

@@ -6,10 +6,13 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../routes/stack.routes';
 
+
 const Authentication: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+
+  console.log('KINGSLAYER', process.env.REACT_APP_API)
 
   var navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   // Function to handle login
@@ -17,7 +20,7 @@ const Authentication: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://localhost:7209/api/authentication/login', {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/authentication/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -44,6 +47,8 @@ const Authentication: React.FC = () => {
       if (data?.token) {
         await AsyncStorage.setItem('userToken', data.token);
         await AsyncStorage.setItem('userId', data.userID);
+        await AsyncStorage.setItem('avatarUrl', data.avatar);
+
         Alert.alert('Success', 'Login successful');
         navigation.navigate('Home' as never)
       } else {

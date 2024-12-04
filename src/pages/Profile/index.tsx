@@ -5,6 +5,7 @@ import { useIsFocused, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import axios from 'axios';  // Add axios for API requests
 import { RootStackParamList } from '../../routes/stack.routes';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const dimensions = Dimensions.get('window');
 
@@ -23,8 +24,8 @@ const Profile = () => {
   // Fetch profile data
   const fetchProfile = async () => {
     try {
-      const userId = 1;
-      const response = await axios.get(`https://localhost:7209/Profile/GetOne/${userId}`);
+      const userId = await AsyncStorage.getItem('userId');
+      const response = await axios.get(`${process.env.REACT_APP_API}/Profile/GetOne/${userId}`);
 
 
       if (response.status == 200) {
@@ -32,7 +33,7 @@ const Profile = () => {
         setUsername(profile.username);
         setBio(profile.Bio || '');
         setName(profile.nome || '');
-        setAvatar(`https://localhost:7209/${profile.avatarUrl}` || '');
+        setAvatar(`${process.env.REACT_APP_API}/${profile.avatarUrl}` || '');
       }
     } catch (error) {
       setError(true);

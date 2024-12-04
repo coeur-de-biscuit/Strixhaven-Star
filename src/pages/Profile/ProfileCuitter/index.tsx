@@ -19,7 +19,7 @@ const ProfileCuitter: React.FC = () => {
   const fetchTweets = async (profileId: number) => {
     try {
       const token = await getToken();
-      const response = await axios.get(`https://localhost:7209/CuitterPost/GetByProfileId/${profileId}`, {
+      const response = await axios.get(`${process.env.REACT_APP_API}/CuitterPost/GetByProfileId/${profileId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -40,7 +40,7 @@ const ProfileCuitter: React.FC = () => {
   const deleteTweet = async (id: number) => {
     try {
       const token = await getToken();
-      await axios.delete(`https://localhost:7209/CuitterPost/Delete/${id}`, {
+      await axios.delete(`${process.env.REACT_APP_API}/CuitterPost/Delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -87,7 +87,7 @@ const ProfileCuitter: React.FC = () => {
         renderItem={({ item }) => (
           <View>
             <Tweet
-              avatarImage={`https://localhost:7209/${item.userAvatar}`}
+              avatarImage={`${process.env.REACT_APP_API}/${item.userAvatar}`}
               name={item.userName}
               profileName={item.profileName}
               comments={10} // Placeholder
@@ -95,7 +95,7 @@ const ProfileCuitter: React.FC = () => {
               reTweets={4} // Placeholder
               time="4h" // Placeholder
               hasImage={item.hasImage}
-              tweetImage={`https://localhost:7209/${item.contentImage}`}
+              tweetImage={`${process.env.REACT_APP_API}/${item.contentImage}`}
               remove={() => deleteTweet(item.id)}
             >
               {item.content}

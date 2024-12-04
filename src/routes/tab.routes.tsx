@@ -20,14 +20,8 @@ const TabRoutes = () => {
       }}
       backBehavior='history'
     >
-      {/* <Screen
-        name="CreatePost"
-        component={CreatePost}
-        options={{
-          tabBarIcon: ({ size, color }) => <Feather name='plus-circle' size={30} color={color} />
-        }}
-      /> */}
-      {/* <Screen
+
+      <Screen
         name="Home"
         component={HomeScreen}
         options={{
@@ -42,14 +36,20 @@ const TabRoutes = () => {
           tabBarIcon: ({ size, color }) => <Feather name='bookmark' size={20} color={color} />
         }}
       />
-
+      <Screen
+        name="CreatePost"
+        component={CreatePost}
+        options={{
+          tabBarIcon: ({ size, color }) => <Feather name='plus-circle' size={30} color={color} />
+        }}
+      />
       <Screen
         name="StudentRanking"
         component={MyTabs}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='trending-up' size={20} color={color} />
         }}
-      />*/}
+      />
       {/* <Screen
         name="Cuitter"
         component={Cuitter}

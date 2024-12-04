@@ -12,7 +12,7 @@ const EditProfile = () => {
   const [bio, setBio] = useState('');
   const [nome, setNome] = useState('');
   const [username, setUsername] = useState('');
-  const [avatar, setAvatar] = useState<string | null>('https://th.bing.com/th/id/OIG3.cBihXbs3Tc0LnDwqVXXr?pid=ImgGn'); // For preview
+  const [avatar, setAvatar] = useState<string | null>('https://i0.wp.com/espaferro.com.br/wp-content/uploads/2024/06/placeholder.png?ssl=1'); // For preview
   const [avatarFile, setAvatarFile] = useState<File | null>(null); // For FormData
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,7 +41,7 @@ const EditProfile = () => {
     }
 
     try {
-      const response = await axios.put(`https://localhost:7209/Profile/Update/${userId}`, formData, {
+      const response = await axios.put(`${process.env.REACT_APP_API}/Profile/Update/${userId}`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -82,7 +82,7 @@ const EditProfile = () => {
         style={{ marginLeft: 30 }}
       />
       <View style={{ alignItems: 'center', position: 'relative' }}>
-        {/* Hidden file input */}
+
         <input
           type="file"
           accept="image/*"
@@ -117,7 +117,7 @@ const EditProfile = () => {
             />
           </View>
         )}
-        {/* Clickable text for changing the avatar */}
+
         <TouchableOpacity onPress={() => document.querySelector('input[type="file"]')?.click()}>
           <Text style={{ marginTop: 10, color: '#3f3a5e', fontWeight: 'bold' }}>Change Avatar</Text>
         </TouchableOpacity>

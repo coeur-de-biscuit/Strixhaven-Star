@@ -1,61 +1,68 @@
 import React, { useState } from 'react';
 import { Dimensions, Text, TextInput, View, TouchableOpacity, Image, Alert } from 'react-native';
-import * as ImagePicker from 'expo-image-picker';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import * as FileSystem from 'expo-file-system';
+import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const CreatePost: React.FC = () => {
-  const [image, setImage] = useState<string>('');
-  const [uploading, setUploading] = useState<boolean>(false);
+  const [image, setImage] = useState<string | null>('https://i0.wp.com/espaferro.com.br/wp-content/uploads/2024/06/placeholder.png?ssl=1'); // For preview
+  const [imageFile, setImageFile] = useState<File | null>(null); // For FormData
+  const [caption, setCaption] = useState<string>('');
+  const navigation = useNavigation();
 
-  const dimensions = Dimensions.get('window');
-
-  const pickImage = async () => {
-    // No permissions request is necessary for launching the image library
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
-
-    console.log(result);
-
-    if (!result.canceled) {
-      setImage(result.assets[0].uri);
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      setImageFile(file);
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setImage(e.target?.result as string);
+      };
+      reader.readAsDataURL(file);
     }
   };
 
-  const uploadMedia = async () => {
-    setUploading(true);
+  const getToken = async (): Promise<string | null> => {
+    const token = await AsyncStorage.getItem('userToken');
+    return token;
+  };
+  const getUserId = async (): Promise<string | null> => {
+    const userId = await AsyncStorage.getItem('userId');
+    return userId;
+  };
 
+  const handlePost = async () => {
+    if (!caption.trim() && !imageFile) {
+      Alert.alert('Error', 'Please add a caption or select an image.');
+      return;
+    }
+
+    const formData = new FormData();
+    const userId = await getUserId()
+
+    formData.append('Caption', caption);
+    formData.append('UserId', userId || '');
+    if (imageFile) {
+      formData.append('Image', imageFile);
+    }
     try {
-      const { uri } = await FileSystem.getInfoAsync(image);
-      const blob = await new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.onload = () => {
-          resolve(xhr.response);
-        };
-        xhr.onerror = (e) => {
-          reject(new TypeError('Network request failed'))
-        };
-        xhr.responseType = 'blob';
-        xhr.open('GET', uri, true);
-        xhr.send(null)
+      const token = await getToken();
+      const response = await axios.post(`${process.env.REACT_APP_API}/StrixgamPost/CreatePost`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          Authorization: `Bearer ${token}`,
+        },
       });
-
-      const fileName = image.substring(image.lastIndexOf('/' + 1));
-      const ref = firebase.storage().ref().child(fileName);
-
-      await ref.put(blob);
-      setUploading(false);
-      Alert.alert('Catiau!!!')
-      setImage('');
+      Alert.alert('Success', 'Post created successfully!');
+      navigation.navigate('Home' as never);
     } catch (error) {
       console.error(error);
-      setUploading(false)
+      Alert.alert('Error', 'Failed to create post.');
     }
-  }
+  };
+
+  const dimensions = Dimensions.get('window');
 
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center', height: dimensions.height * 0.95 }}>
@@ -63,6 +70,7 @@ const CreatePost: React.FC = () => {
       <TextInput
         placeholder='No que está pensando?'
         multiline
+        onChangeText={(text) => setCaption(text)}
         numberOfLines={4}
         style={{
           alignItems: 'center',
@@ -70,28 +78,41 @@ const CreatePost: React.FC = () => {
           //@ts-ignore
           outlineStyle: 'none',
           textAlign: 'center',
-          width: '90%'
+          width: '90%',
+          marginTop: 20
         }}
       />
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleFileChange}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
 
-      <TouchableOpacity onPress={uploadMedia} style={{ backgroundColor: '#d945d1', borderRadius: 10, marginTop: 30 }}>
+          opacity: 0,
+          cursor: 'pointer',
+        }}
+      />
+      <TouchableOpacity onPress={handlePost} style={{ backgroundColor: '#d945d1', borderRadius: 10, marginTop: 30 }}>
         <Text style={{ padding: 5, margin: 10 }}>Adicionar foto</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={pickImage}
+        onPress={() => document.querySelector('input[type="file"]')?.click()}
         style={{
-          backgroundColor: '#037ffc', 
-          height: 50, 
+          backgroundColor: '#037ffc',
+          height: 50,
           width: 50,
           borderRadius: 100,
-          position: 'absolute', 
-          bottom: 40, 
+          position: 'absolute',
+          bottom: 40,
           right: 30,
           alignItems: 'center',
           justifyContent: 'center'
         }}
       >
-        <Ionicons 
+        <Ionicons
           name='camera'
           color='white'
           size={20}

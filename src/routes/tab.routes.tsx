@@ -7,8 +7,8 @@ import StrixhavenStar from '../pages/StrixhavenStar';
 import { MyTabs } from './toptab.routes';
 import CreatePost from '../pages/CreatePost';
 import Cuitter from '../pages/Cuitter';
-import { MyTabsProfile } from './toptabProfile.routes';
 import Profile from '../pages/Profile';
+import { MyTabsProfile } from './toptabProfile.routes';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -59,7 +59,7 @@ const TabRoutes = () => {
       /> */}
       <Screen
         name="Profile"
-        component={Profile}
+        component={MyTabsProfile}
         options={{
           tabBarIcon: ({ size, color }) => <Feather name='twitter' size={20} color={color} />
         }}

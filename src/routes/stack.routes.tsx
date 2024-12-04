@@ -18,7 +18,6 @@ export type RootStackParamList = {
   NewsDetail: { id: number };
   RankingDetail: { id: number };
   RankingDetailPopularity: { id: number };
-  Profile: { id: number };
   EditProfile: {};
 };
 
@@ -51,7 +50,6 @@ const StackRoutes = () => {
       <Stack.Screen name="NewsDetail" component={NewsDetail} />
       <Stack.Screen name="RankingDetail" component={RankingDetail} />
       <Stack.Screen name="RankingDetailPopularity" component={RankingDetailPopularity} />
-      <Stack.Screen name="Profile" component={MyTabsProfile} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
     </Stack.Navigator>
   );

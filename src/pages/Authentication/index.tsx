@@ -42,11 +42,9 @@ const Authentication: React.FC = () => {
       console.log(data)
 
       if (data?.token) {
-        // Save the token
         await AsyncStorage.setItem('userToken', data.token);
         await AsyncStorage.setItem('userId', data.userID);
         Alert.alert('Success', 'Login successful');
-        // Navigate to Home screen
         navigation.navigate('Home' as never)
       } else {
         Alert.alert('Error', 'No token received');

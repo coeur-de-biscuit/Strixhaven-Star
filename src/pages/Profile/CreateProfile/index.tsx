@@ -6,6 +6,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../../routes/stack.routes';
+import Toast from 'react-native-toast-message';
 
 const EditProfile = () => {
   const [bio, setBio] = useState('');
@@ -32,6 +33,7 @@ const EditProfile = () => {
     const formData = new FormData();
     formData.append('Nome', nome);
     formData.append('Username', username);
+    //@ts-ignore
     formData.append('UserId', userId);
 
     if (avatarFile) {
@@ -45,16 +47,30 @@ const EditProfile = () => {
         },
       });
 
-      if (response.status === 201) {
-        Alert.alert('Success', 'Profile created successfully!');
+      if (response.status === 204) {
+        Toast.show({
+          type: 'success',
+          text1: 'Profile Updated',
+          text2: 'Your profile changes have been saved successfully.',
+        });
+        navigation.goBack();
       } else {
-        Alert.alert('Error', 'Failed to create profile');
+        Toast.show({
+          type: 'error',
+          text1: 'Update Failed',
+          text2: 'Unable to update your profile. Please try again later.',
+        });
       }
     } catch (error) {
       console.error(error);
-      Alert.alert('Error', 'Something went wrong while creating the profile.');
+      Toast.show({
+        type: 'error',
+        text1: 'Error',
+        text2: 'An error occurred while updating the profile.',
+      });
     }
   };
+
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   return (
     <View style={{ padding: 20 }}>

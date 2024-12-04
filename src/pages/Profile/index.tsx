@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Dimensions, Image, Text, TextInput, TouchableOpacity, View, ActivityIndicator, Alert, Button } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useNavigation } from '@react-navigation/native';
+import { useIsFocused, useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import axios from 'axios';  // Add axios for API requests
 import { RootStackParamList } from '../../routes/stack.routes';
@@ -15,6 +15,7 @@ const Profile = () => {
   const [avatar, setAvatar] = useState('');
   const [loading, setLoading] = useState(true); // For loading state
   const [error, setError] = useState(false); // For error state
+
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   console.log(avatar)
@@ -28,7 +29,6 @@ const Profile = () => {
 
       if (response.status == 200) {
         const profile = response.data;
-        console.log('FUCK AMERICA', profile)
         setUsername(profile.username);
         setBio(profile.Bio || '');
         setName(profile.nome || '');
@@ -41,10 +41,14 @@ const Profile = () => {
       setLoading(false);
     }
   };
-
+  const isFocused = useIsFocused();
   useEffect(() => {
     fetchProfile();
   }, []);
+
+  useEffect(() => {
+    fetchProfile();
+  }, [isFocused]);
 
   const onChange = (textValue: string) => setBio(textValue);
 

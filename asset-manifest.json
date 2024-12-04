@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.js": "/Strixhaven-Star/static/js/main.4cff8ae1.js",
-    "static/js/601.24665447.js": "/Strixhaven-Star/static/js/601.24665447.js",
+    "main.js": "/Strixhaven-Star/static/js/main.e91ba75e.js",
+    "static/js/374.259692a7.js": "/Strixhaven-Star/static/js/374.259692a7.js",
     "static/media/jane.png": "/Strixhaven-Star/static/media/jane.39960b189bf869c1a23f.png",
     "static/media/ruhini.png": "/Strixhaven-Star/static/media/ruhini.c173c9703b1c5d080572.png",
+    "static/media/logo.png": "/Strixhaven-Star/static/media/logo.8972f5a4f085418db190.png",
     "static/media/amelia2.jpg": "/Strixhaven-Star/static/media/amelia2.abe9a5bb2501bd01a0b6.jpg",
     "static/media/KillianLu.png": "/Strixhaven-Star/static/media/KillianLu.774076038b6b9a19c505.png",
     "static/media/Ionicons.ttf": "/Strixhaven-Star/static/media/Ionicons.3517aeaa34b2f8cd8eef.ttf",
@@ -31,11 +32,11 @@
     "favicon-16.png": "/Strixhaven-Star/favicon-16.png",
     "manifest.json": "/Strixhaven-Star/manifest.json",
     "serve.json": "/Strixhaven-Star/serve.json",
-    "main.4cff8ae1.js.map": "/Strixhaven-Star/static/js/main.4cff8ae1.js.map",
-    "601.24665447.js.map": "/Strixhaven-Star/static/js/601.24665447.js.map"
+    "main.e91ba75e.js.map": "/Strixhaven-Star/static/js/main.e91ba75e.js.map",
+    "374.259692a7.js.map": "/Strixhaven-Star/static/js/374.259692a7.js.map"
   },
   "entrypoints": [
-    "static/js/601.24665447.js",
-    "static/js/main.4cff8ae1.js"
+    "static/js/374.259692a7.js",
+    "static/js/main.e91ba75e.js"
   ]
 }
